@@ -1,0 +1,189 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$hm-arrow-l-name: 'hm-arrow-l';
+$hm-arrow-l-x: 0px;
+$hm-arrow-l-y: 0px;
+$hm-arrow-l-offset-x: 0px;
+$hm-arrow-l-offset-y: 0px;
+$hm-arrow-l-width: 9px;
+$hm-arrow-l-height: 15px;
+$hm-arrow-l-total-width: 183px;
+$hm-arrow-l-total-height: 33px;
+$hm-arrow-l-image: 'sprite.png';
+$hm-arrow-l: (0px, 0px, 0px, 0px, 9px, 15px, 183px, 33px, 'sprite.png', 'hm-arrow-l', );
+$hm-buy-ticket-name: 'hm_buy-ticket';
+$hm-buy-ticket-x: 114px;
+$hm-buy-ticket-y: 0px;
+$hm-buy-ticket-offset-x: -114px;
+$hm-buy-ticket-offset-y: 0px;
+$hm-buy-ticket-width: 33px;
+$hm-buy-ticket-height: 33px;
+$hm-buy-ticket-total-width: 183px;
+$hm-buy-ticket-total-height: 33px;
+$hm-buy-ticket-image: 'sprite.png';
+$hm-buy-ticket: (114px, 0px, -114px, 0px, 33px, 33px, 183px, 33px, 'sprite.png', 'hm_buy-ticket', );
+$hm-find-room-name: 'hm_find-room';
+$hm-find-room-x: 147px;
+$hm-find-room-y: 0px;
+$hm-find-room-offset-x: -147px;
+$hm-find-room-offset-y: 0px;
+$hm-find-room-width: 36px;
+$hm-find-room-height: 25px;
+$hm-find-room-total-width: 183px;
+$hm-find-room-total-height: 33px;
+$hm-find-room-image: 'sprite.png';
+$hm-find-room: (147px, 0px, -147px, 0px, 36px, 25px, 183px, 33px, 'sprite.png', 'hm_find-room', );
+$hm-phone-name: 'hm_phone';
+$hm-phone-x: 78px;
+$hm-phone-y: 0px;
+$hm-phone-offset-x: -78px;
+$hm-phone-offset-y: 0px;
+$hm-phone-width: 18px;
+$hm-phone-height: 18px;
+$hm-phone-total-width: 183px;
+$hm-phone-total-height: 33px;
+$hm-phone-image: 'sprite.png';
+$hm-phone: (78px, 0px, -78px, 0px, 18px, 18px, 183px, 33px, 'sprite.png', 'hm_phone', );
+$ht-instagram-name: 'ht-instagram';
+$ht-instagram-x: 44px;
+$ht-instagram-y: 0px;
+$ht-instagram-offset-x: -44px;
+$ht-instagram-offset-y: 0px;
+$ht-instagram-width: 17px;
+$ht-instagram-height: 17px;
+$ht-instagram-total-width: 183px;
+$ht-instagram-total-height: 33px;
+$ht-instagram-image: 'sprite.png';
+$ht-instagram: (44px, 0px, -44px, 0px, 17px, 17px, 183px, 33px, 'sprite.png', 'ht-instagram', );
+$ht-menu-i-name: 'ht-menu-i';
+$ht-menu-i-x: 9px;
+$ht-menu-i-y: 0px;
+$ht-menu-i-offset-x: -9px;
+$ht-menu-i-offset-y: 0px;
+$ht-menu-i-width: 9px;
+$ht-menu-i-height: 9px;
+$ht-menu-i-total-width: 183px;
+$ht-menu-i-total-height: 33px;
+$ht-menu-i-image: 'sprite.png';
+$ht-menu-i: (9px, 0px, -9px, 0px, 9px, 9px, 183px, 33px, 'sprite.png', 'ht-menu-i', );
+$ht-phone-name: 'ht-phone';
+$ht-phone-x: 61px;
+$ht-phone-y: 0px;
+$ht-phone-offset-x: -61px;
+$ht-phone-offset-y: 0px;
+$ht-phone-width: 17px;
+$ht-phone-height: 17px;
+$ht-phone-total-width: 183px;
+$ht-phone-total-height: 33px;
+$ht-phone-image: 'sprite.png';
+$ht-phone: (61px, 0px, -61px, 0px, 17px, 17px, 183px, 33px, 'sprite.png', 'ht-phone', );
+$ht-vk-name: 'ht-vk';
+$ht-vk-x: 96px;
+$ht-vk-y: 0px;
+$ht-vk-offset-x: -96px;
+$ht-vk-offset-y: 0px;
+$ht-vk-width: 18px;
+$ht-vk-height: 14px;
+$ht-vk-total-width: 183px;
+$ht-vk-total-height: 33px;
+$ht-vk-image: 'sprite.png';
+$ht-vk: (96px, 0px, -96px, 0px, 18px, 14px, 183px, 33px, 'sprite.png', 'ht-vk', );
+$tabs-slider-arrow-l-name: 'tabs-slider-arrow-l';
+$tabs-slider-arrow-l-x: 30px;
+$tabs-slider-arrow-l-y: 0px;
+$tabs-slider-arrow-l-offset-x: -30px;
+$tabs-slider-arrow-l-offset-y: 0px;
+$tabs-slider-arrow-l-width: 14px;
+$tabs-slider-arrow-l-height: 25px;
+$tabs-slider-arrow-l-total-width: 183px;
+$tabs-slider-arrow-l-total-height: 33px;
+$tabs-slider-arrow-l-image: 'sprite.png';
+$tabs-slider-arrow-l: (30px, 0px, -30px, 0px, 14px, 25px, 183px, 33px, 'sprite.png', 'tabs-slider-arrow-l', );
+$tabs-slider-arrow-r-name: 'tabs-slider-arrow-r';
+$tabs-slider-arrow-r-x: 18px;
+$tabs-slider-arrow-r-y: 0px;
+$tabs-slider-arrow-r-offset-x: -18px;
+$tabs-slider-arrow-r-offset-y: 0px;
+$tabs-slider-arrow-r-width: 12px;
+$tabs-slider-arrow-r-height: 22px;
+$tabs-slider-arrow-r-total-width: 183px;
+$tabs-slider-arrow-r-total-height: 33px;
+$tabs-slider-arrow-r-image: 'sprite.png';
+$tabs-slider-arrow-r: (18px, 0px, -18px, 0px, 12px, 22px, 183px, 33px, 'sprite.png', 'tabs-slider-arrow-r', );
+$spritesheet-width: 183px;
+$spritesheet-height: 33px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($hm-arrow-l, $hm-buy-ticket, $hm-find-room, $hm-phone, $ht-instagram, $ht-menu-i, $ht-phone, $ht-vk, $tabs-slider-arrow-l, $tabs-slider-arrow-r, );
+$spritesheet: (183px, 33px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../assets/img/sprites/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

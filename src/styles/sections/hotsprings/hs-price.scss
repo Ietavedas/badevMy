@@ -1,0 +1,167 @@
+.hs-price {
+    padding: 10px;
+    margin-top: 70px;
+}
+
+.hs-price__wrapper {
+    border: 2px solid $lightblue;
+}
+
+.hs-price__list {
+    @extend %clearfix;
+    padding: 40px;
+}
+
+.hs-price__item {
+
+    * {
+        font-size: 15px;
+    }
+}
+
+.hs-price__item-price {
+    float: left;
+    width: 25%;
+}
+
+.hs-price__item-list {
+    float: left;
+    width: 50%;
+
+    font-size: 0;
+}
+
+.hs-price__list-in {
+    @include inlineblock();
+    width: 50%;
+
+    * {
+        font-size: 15px;
+    }
+}
+
+.hs-price__item-free {
+    float: left;
+    width: 25%;
+}
+
+.hs-price__title {
+    font-size: 40px;
+    @include open_sans(extrabold);
+}
+
+.hs-price__free {
+    padding: 18px;
+    border: 1px solid $lightblue;
+}
+
+.hs-price__free_b {
+    @include open_sans(semibold);
+    font-size: 16px;
+}
+
+.hs-price__block {
+    width: 100%;
+}
+
+.hs-price__cell {
+    width: 25%;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.hs-price__cell-top {
+    padding: 40px;
+    background: #fafafa;
+}
+
+.hs-price__cell_br {
+    border-right: 1px solid #e6e6e6;
+}
+
+.hs-price__cell-text {
+    font-size: 17px;
+}
+
+.hs-price__cell-in {
+    padding: 20px;
+}
+
+.hs-price__cell-in_grey {
+    background: #fafafa;
+}
+
+.hs-price__cell_height {
+    min-height: 155px;
+}
+
+.hs-price__cell-middle {
+    vertical-align: top;
+    padding: 22px 40px;
+}
+
+.hs-price__cell-bottom {
+    vertical-align: top;
+    padding: 22px 40px;
+}
+
+.hs-price__row-item {
+    margin-top: 25px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.hs-price__bottom {
+    font-size: 0;
+    padding: 40px;
+}
+
+.hs-price-b__item {
+    @include inlineblock();
+    width: 50%;
+
+    * {
+        font-size: 17px;
+    }
+}
+
+.hs-price-b__c-b {
+    margin-top: 42px;
+}
+
+.hs-price-b__c-t {
+    margin-top: 47px;
+}
+
+.hs-priceb__group-wrapper {
+    margin-top: 107px;
+}
+
+.hs-price-b-group__pic {
+    margin-top: 10px;
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.hs-price__item-in-item_check {
+    width: 9px;
+    @include inlineblock(middle);
+
+    .cls-1 {
+        fill:none;
+        stroke:#62b3d9;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-width:2px;
+    }
+}
+
+.hs-price__item-in-item_text {
+    @include inlineblock(middle);
+    margin-left: 2px;
+}

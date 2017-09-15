@@ -1,0 +1,131 @@
+.bt-information {
+    margin-top: 40px;
+
+    .information__wrapper {
+        border: 1px solid #1679a8;
+
+        display: flex;
+    }
+
+    .information__text {
+        color: #002232;
+        font-size: 18px;
+    }
+
+    .information__date {
+        padding: 30px;
+        border-right: 1px solid $lightgrey;
+
+        display: flex;
+        flex-direction: column;
+        flex-basis: 25%;
+
+        .information__date-svg {
+            width: 102px;
+
+            .cls-1 {
+                fill:none;
+                stroke:#78c6eb;
+                stroke-linecap:round;
+                stroke-linejoin:round;
+                stroke-width:2px;
+            }
+        }
+
+        .information__text {
+            margin-top: 34px;
+        }
+    }
+
+    .information__age {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 18%;
+
+        .information__text {
+            height: 50%;
+            padding: 30px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .information__text-other {
+            flex-direction: column;
+            border-top: 1px solid $lightgrey;
+            align-items: flex-start;
+        }
+    }
+
+    .information__price {
+        border-left: 1px solid $lightgrey;
+
+        display: flex;
+        flex-direction: column;
+        flex-basis: 11.5%;
+
+        .information__text {
+            height: 50%;
+            padding: 30px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .information__text-other {
+            flex-direction: column;
+            border-top: 1px solid $lightgrey;
+            justify-content: center;
+        }
+    }
+
+    .information__transfer {
+        padding: 30px;
+        border-left: 1px solid $lightgrey;
+
+        display: flex;
+        flex-direction: column;
+        flex-basis: 25%;
+
+        .information__transfer-svg {
+            width: 103px;
+
+            .cls-1 {
+                fill:none;
+                stroke:#78c6eb;
+                stroke-linecap:round;
+                stroke-linejoin:round;
+                stroke-width:2px;
+            }
+        }
+
+        .information__text {
+            margin-top: 34px;
+        }
+    }
+
+    .information__place {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 25%;
+
+        padding: 30px;
+        border-left: 1px solid $lightgrey;
+
+        .information__place-svg {
+            width: 81px;
+
+            .cls-1 {
+                fill:none;
+                stroke:#78c6eb;
+                stroke-linecap:round;
+                stroke-linejoin:round;
+                stroke-width:2px;
+            }
+        }
+
+        .information__text {
+            margin-top: 34px;
+        }
+    }
+}

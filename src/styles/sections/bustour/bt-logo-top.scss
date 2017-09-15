@@ -1,0 +1,108 @@
+.bt-logo-top {
+
+    .logo-top__block {
+        width: 100%;
+        min-height: 500px;
+        background: url('../assets/img/bg/bustour.jpg') 0 0 no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .logo-top__breadcrumbs {
+        padding-top: 50px;
+    }
+
+    .logo-top__wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .logo-top__main {
+        transition: .3s;
+
+        &:hover {
+            color: #68daff;;
+        }
+    }
+
+    .logo-top__bd-text {
+        @include inlineblock();
+        color: $white;
+        text-decoration: none;
+        margin-left: 19px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    .logo-top__bd-arrow {
+        @include inlineblock();
+        width: 5px;
+        height: 8px;
+
+        .cls-1{
+            fill: none;
+            stroke: #fff;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2px;
+        }
+    }
+
+    .logo-top__title {
+        @include inlineblock();
+        @include open_sans(extrabold);
+        color: $white;
+        font-size: 65px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* .logo-top__text {
+        color: $white;
+        margin-top: 24px;
+
+        p {
+            margin-bottom: 12px;
+        }
+    } */
+
+    .logo-top__title {
+        @include open_sans(extrabold);
+        @include inlineblock();
+        color: $white;
+        font-size: 65px;
+        position: relative;
+    }
+
+    .logo-top__word-t {
+
+        &:before {
+            content: url('../assets/img/content/hs-waterfun-d.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -47px;
+            left: -29px;
+            z-index: -1;
+        }
+
+    }
+
+    .logo-top__wave-b {
+        width: 281px;
+        @include inlineblock();
+        margin-top: 25px;
+
+        .cls-1 {
+            fill: none;
+            stroke: $white;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    }
+}

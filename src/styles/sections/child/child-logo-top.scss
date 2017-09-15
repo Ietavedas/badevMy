@@ -1,0 +1,99 @@
+.child-logo-top {
+    background: url('../assets/img/bg/child.jpg') 0 0 no-repeat;
+    background-size: cover;
+    min-height: 555px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 10px 0;
+
+    text-align: center;
+    color: #fff;
+
+    .container {
+        max-width: 1100px;
+    }
+}
+
+.child-logo__bcrumbs {
+    margin-top: 50px;
+}
+
+.child-logo__bcrumbs-list {
+    @extend %clearfix;
+}
+
+.child-logo__bcrumbs-item {
+    @include inlineblock(middle);
+}
+
+.child-logo__bcrumbs-item-i {
+    width: 5px;
+
+    .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+    }
+}
+
+.child-logo__bcrumbs-link {
+    @include inlineblock(middle);
+    color: $white;
+    font-size: 15px;
+    text-decoration: none;
+    transition: .3s;
+
+    &:hover {
+        color: #68daff;
+    }
+}
+
+.child-logo__title {
+    @include open_sans(extrabold);
+    @include inlineblock();
+    color: $white;
+    font-size: 65px;
+    margin-top: 80px;
+    position: relative;
+
+    @include w1460px {
+        .r-logo__word {
+            display: block;
+        }
+    }
+}
+
+.child-logo__word-t {
+
+    &:before {
+        content: url('../assets/img/content/hs-waterfun-d.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -47px;
+        left: -29px;
+        z-index: -1;
+    }
+}
+
+.child-logo__text {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 40px;
+    line-height: 1.8;
+}
+
+.child-logo__wave {
+    width: 281px;
+    @include inlineblock();
+    margin-top: 40px;
+
+    .cls-1 {
+        fill: none;
+        stroke: #78c6eb;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+}

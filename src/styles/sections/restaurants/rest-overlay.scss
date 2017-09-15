@@ -1,0 +1,78 @@
+.rest-overlay{
+	background: url(../assets/img/icons/rest-layout.png);
+	width: 561px;
+	height: 1547px;
+	position: absolute;
+	left: 0;
+	top: 700px;
+	z-index: -1;
+
+	&--mid{
+		left: auto;
+		right: 0;
+		top: 2600px;
+		transform: rotate(180deg);
+	}
+
+	&--bottom{
+		top: 3300px;
+		left: -10%;
+	}
+}
+
+@media screen and (max-width: 1800px){
+	.rest-overlay{
+		left: -10%;
+		&--mid{
+			left: auto;
+			right: -15%;
+		}
+
+		&--bottom{
+			top: 3300px;
+			left: -18%;
+		}
+	}
+
+}
+
+.rest-tomato-half{
+	background: url(../assets/img/icons/tomato-half.png);
+	width: 260px;
+	height: 236px;
+	position: absolute;
+	right: 0;
+	top: 10%;
+}
+
+.rest-tomato-full{
+	background: url(../assets/img/icons/tomato-full.png);
+	width: 291px;
+	height: 303px;
+	position: absolute;
+	left: 0;
+	top: 17%;
+	z-index: -1;
+}
+
+.rest-pepper{
+	background: url(../assets/img/icons/pepper.png);
+	width: 304px;
+	height: 197px;
+	position: absolute;
+	top: -120px;
+	right: -80px;
+}
+
+.rest-olive{
+	background: url(../assets/img/icons/olive.png);
+	width: 296px;
+	height: 270px;
+	position: absolute;
+	bottom: -225px;
+	left: 280px;
+}
+
+.rest-cup{
+
+}

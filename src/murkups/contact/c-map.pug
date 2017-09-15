@@ -1,0 +1,93 @@
+.contact-block
+	.contact-block__left
+		.contact-block__title Отдел бронирования:
+
+		.contact-block__info
+			span.contact-block__text 
+				i.c-icons
+				| г. Челябинск, Кирова, 86
+			span.contact-block__text 
+				i.c-icons.c-icons--ph
+				| +7 (351) 200-33-33
+			span.contact-block__text 
+				i.c-icons.c-icons--d
+				| baden74@baden-ural.com
+			span.contact-block__text 
+				i.c-icons.c-icons--cl
+				| Ежедневно (Пн-Вс) 8:00-19:00
+		
+		.contact-block__info
+			.contact-block__title Служба приема и размещения (ресепшен):
+
+		.contact-block__info
+			span.contact-block__text 
+				i.c-icons
+				| Челябинская обл., с. Еткуль
+			span.contact-block__text 
+				i.c-icons.c-icons--ph
+				| +7 (351) 200-33-33
+			span.contact-block__text 
+				i.c-icons.c-icons--cl
+				| Круглосуточно
+		
+		.contact-block__info
+			.contact-block__title Мы в соц. сетях:
+
+		.contact-block__info
+			a(href="#").contact-block__text.contact-block__text--soc
+					i.s-icons.s-icons
+
+			a(href="#").contact-block__text.contact-block__text--soc
+					i.s-icons.s-icons--inst
+
+			a(href="#").contact-block__text.contact-block__text--soc
+					i.s-icons.s-icons--ok
+
+			a(href="#").contact-block__text.contact-block__text--soc
+					i.s-icons.s-icons--f
+		
+		.contact-block__info
+			.contact-block__title Мы в Viber, WhatsApp:
+		
+		.contact-block__info
+			a(href="").call-icons
+			a(href="").call-icons.call-icons--wa
+			a(href="#").contact-block__text.contact-block__text--call
+				| +7 951 77 85 114
+
+		.contact-block__download-wrap
+			a.contact-block__download-block
+				img(src="./assets/img/icons/sun-file.png")
+				span Правила проживания и пребывания на базе отдыха
+			a.contact-block__download-block
+				img(src="./assets/img/icons/water-file.png")
+				span Правила пользования услугами комплекса бассейнов
+
+	.contact-block__right
+		.contact-block__tabs
+			.contact-block__link-wrap
+				div(id="complex").contact-block__link База отдыха
+				div(id="office").contact-block__link Офис в Челябинске
+
+			div(id="complexTab").contact-block__tab
+				.contact-block__info
+					span.contact-block__text.active
+						i.c-icons.c-icons--ar
+						| Координаты для навигатора 55°7’45″N 60°20’34″E
+
+					span.contact-block__text
+						i.c-icons.c-icons--z
+						| Введите адрес, откуда вы поедете, и мы построим для вас маршрут:
+
+					div(id="ymap-form")
+						input(type="text" name="point-from" id="point-from" placeholder="Введите адрес отбытия" style="background: url(http://terenkul.ru/wp-content/themes/terenkul/img/kontaktyi_icon_pencil.png) no-repeat 10px;")
+						button(id="show-map").button.button--mid Рассчитать маршрут
+				
+				div(id="ymap")
+					//- script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa84afe7616ecc660beaca9da6b6d5816f65293eb5ee4b04d280906218c528e7e&amp;width=705&amp;height=715&amp;lang=ru_RU&amp;scroll=true")
+
+			div(id="officeTab").contact-block__tab.inactive
+				//- script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa84afe7616ecc660beaca9da6b6d5816f65293eb5ee4b04d280906218c528e7e&amp;width=705&amp;height=715&amp;lang=ru_RU&amp;scroll=true")
+
+
+//- <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU&onload=_yst" type="text/javascript"></script>

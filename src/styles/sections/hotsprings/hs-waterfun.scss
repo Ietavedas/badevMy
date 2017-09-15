@@ -1,0 +1,101 @@
+.svg_sunincircle {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+}
+
+.svg__snowflakeincircle {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+}
+
+.hs-waterfun {
+    background: url('../assets/img/bg/hs-waterfun-bg.jpg') 0 0 no-repeat;
+    background-size: cover;
+    min-height: 590px;
+    margin-top: 100px;
+
+    position: relative;
+
+    .container {
+
+        @include desktop {
+            width: 100%;
+        }
+    }
+}
+
+.hs-waterfun__block {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.hs-waterfun__block-w {
+    margin-top: 40px;
+}
+
+.hs-waterfun__pic {
+    @include inlineblock();
+
+    position: relative;
+    bottom: 67px;
+    left: 67px;
+    z-index: 1;
+}
+
+.hs-waterfun__title {
+    @include open_sans(extrabold);
+    font-size: 40px;
+    color: $white;
+    @include inlineblock();
+
+    position: relative;
+    z-index: 2;
+}
+
+.hs-waterfun__item {
+    font-size: 0;
+
+    margin-left: 9%;
+}
+
+.hs-waterfun__block-in {
+    @include inlineblock();
+    width: 33.3%;
+    font-size: 0;
+    text-align: left;
+    margin-top: 35px;
+
+    * {
+        font-size: 15px;
+    }
+
+    @include laptop {
+        width: 50%;
+    }
+}
+
+.hs-waterfun__i {
+    width: 79px;
+    @include inlineblock(middle);
+
+    .cls-1 {
+        fill: none;
+        stroke: #62b3d9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+    }
+}
+
+.hs-waterfun__text {
+    color: $white;
+    font-size: 15px;
+    width: 50%;
+    @include inlineblock(middle);
+    margin-left: 18px;
+}
+
+.hs-waterfun__list {
+    position: relative;
+    bottom: 50px;
+}

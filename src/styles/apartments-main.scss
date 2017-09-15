@@ -1,0 +1,44 @@
+@import "../assets/img/sprites/sprite";
+
+// adjustment variables
+$container-width: 1300px;
+$footer-height: 526px;
+$footer_color: #6d6e71;
+// $body-font : 'fira_sansregular', Helvetica, serif;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$grey: #f9f9f9;
+$darkgrey: #dddddd;
+$lightgrey: #e8e8e8;
+$blue: #06628d;
+$lightblue: #62b3d9;
+$darkblue: #06628d;
+$green: #6fb942;
+
+// layout
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/adjustment";
+@import "_misc/normalize";
+@import "_misc/font-awesome";
+
+// plugins
+@import "plugins/slick/slick";
+@import "plugins/slick/slick-theme";
+
+@import "plugins/font-awesome";
+
+// styles
+@import "sections/header";
+
+@import "sections/overlay";
+
+@import "sections/advertising";
+
+@import "sections/apartments/aprt-logo-top";
+@import "sections/apartments/aprt-advertising";
+@import "sections/apartments/aprt-apartments";
+
+@import "sections/footer";

@@ -1,0 +1,40 @@
+@import "../assets/img/sprites/sprite";
+
+// adjustment variables
+$container-width: 1300px;
+$footer-height: 526px;
+$footer_color: #6d6e71;
+// $body-font : 'fira_sansregular', Helvetica, serif;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$blue: #2e94c3;
+$red: #E54B4B;
+
+// layout
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/adjustment";
+@import "_misc/normalize";
+
+// components
+@import "components/datepicker";
+
+// plugins
+@import "plugins/jquery-ui/jquery-ui";
+@import "plugins/jquery-ui/datepicker";
+
+@import "plugins/lightgallery/lightgallery";
+@import "plugins/lightgallery/lg-transitions";
+
+// styles
+@import "sections/header";
+
+@import "sections/search/search-form-popup";
+@import "sections/search/search-logo-top";
+@import "sections/search/search-main-container";
+@import "sections/search/search-form";
+@import "sections/search/search-apartments";
+
+@import "sections/footer";

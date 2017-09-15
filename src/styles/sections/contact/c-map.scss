@@ -1,0 +1,188 @@
+.c-inner{
+	max-width: 1270px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.contact-block{
+	font-size: 0;
+	margin-top: 95px;
+
+	&__left{
+		width: 44%;
+		display: inline-block;
+	}
+
+	&__right{
+		width: 51%;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5%;
+		overflow: hidden;
+
+	}
+
+	&__info{
+		margin-top: 30px;
+	}
+
+	&__title{
+		font-size: 20px;
+		font-family: open_sansextrabold;
+	}
+
+	&__text{
+		font-size: 17px;
+		display: block;
+		text-decoration: none;
+		color: #000;
+
+		&--soc{
+			display: inline-block;
+			margin-right: 10px;
+		}
+		
+		&--call{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	&__download-wrap{
+		margin-top: 30px;
+		border: 1px solid #afd3e4;
+		background: #f9f9f9;
+		padding: 36px 47px;
+		width: auto;
+	}
+
+	&__download-block{
+		font-size: 15px;
+		color: #1280b3;
+		display: inline-block;
+		max-width: 170px;
+		cursor: pointer;
+
+		&:first-child{
+			margin-right: 81px;
+		}
+
+		img{
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		span{
+			text-decoration: underline;
+		}
+
+		&:hover{
+			span{
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__link-wrap{
+		display: flex;
+	}
+
+	&__link{
+		font-size: 17px;
+		padding: 18px 60px
+	}
+}
+
+#ymap{
+	height: 560px;
+}
+
+#ymap-form{
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	input{
+		font-size: 16px;
+		border: 1px solid #dddddd;
+		padding: 10px 35px;
+		width: 55%;
+		float: left;
+	}
+
+	button{
+		margin: 0;
+	}
+}
+
+.c-icons{
+	background: url(../assets/img/sprites/kontakty-sprite.jpg) left top no-repeat;
+	width: 13px;
+	height: 17px;
+	display: inline-block;
+	vertical-align:middle;
+	margin-right: 10px;
+
+	&--ph{
+		background-position: -14px 0;
+		width: 16px;
+	}
+
+	&--d{
+		background-position: -32px 0;
+		width: 15px;
+	}
+
+	&--cl{
+		background-position: -49px 0;
+		width: 16px;
+	}
+
+	&--ar{
+		background-position: -67px 0;
+		width: 14px;
+	}
+
+	&--z{
+		background-position: -82px 0;
+		width: 14px;
+	}
+}
+
+.s-icons{
+	background: url(../assets/img/sprites/s-sprites.jpg) left top no-repeat;
+	width: 18px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+
+	&--inst{
+		background-position: -19px 0;
+	}
+
+	&--ok{
+		background-position: -36px 0;
+		width: 13px;
+	}
+
+	&--f{
+		background-position: -50px 0;
+		width: 19px;
+	}
+}
+
+.call-icons{
+	background: url(../assets/img/sprites/call-sprites.jpg) left top no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+
+	&--wa{
+		background-position: -31px 0;
+	}
+}
+
+.inactive{
+	display: none;
+}

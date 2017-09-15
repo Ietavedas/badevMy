@@ -1,0 +1,33 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content="IE=edge,chrome=1")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title
+            | hotsprings
+
+        link(href="./styles/hotsprings-build.css" rel="stylesheet")
+
+    body
+        .wrapper
+            include ../main-common/header
+            
+            .maincontent
+
+                include ../hs-common/hs-slidertop
+                include ../hs-common/hs-gallery
+                include ../hs-common/hs-sectionSVG
+                include ../hs-common/hs-waterfun
+                include ../hs-common/hs-price.pug
+                include ../hs-common/hs-fullprice
+                include ../hs-common/hs-cwater
+                include ../hs-common/hs-reviews
+                include ../hs-common/hs-stock
+
+                include ../hs-common/hs-footer
+
+        // block footer
+
+    script(src="./js/hotsprings-vendor.js")
+    script(src="./js/hotsprings-scripts.min.js")

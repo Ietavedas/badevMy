@@ -1,0 +1,56 @@
+@import "../assets/img/sprites/sprite";
+
+// adjustment variables
+$container-width: 1300px;
+$footer-height: 526px;
+$footer_color: #6d6e71;
+// $body-font : 'fira_sansregular', Helvetica, serif;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$grey: #f9f9f9;
+$darkgrey: #dddddd;
+$lightgrey: #e8e8e8;
+$blue: #06628d;
+$lightblue: #62b3d9;
+$darkblue: #06628d;
+$green: #6fb942;
+
+// layout
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/adjustment";
+@import "_misc/normalize";
+@import "_misc/font-awesome";
+
+// plugins
+@import "plugins/lightgallery/lightgallery";
+@import "plugins/lightgallery/lg-transitions";
+
+@import "plugins/slick/slick";
+@import "plugins/slick/slick-theme";
+
+@import "plugins/font-awesome";
+
+// styles
+@import "sections/header";
+
+@import "sections/overlay";
+
+@import "sections/gallery";
+
+@import "sections/reviews";
+
+@import "sections/hotsprings/hs-slidertop";
+@import "sections/hotsprings/hs-gallery";
+@import "sections/hotsprings/hs-sectionSVG";
+@import "sections/hotsprings/hs-waterfun";
+@import "sections/hotsprings/hs-price";
+@import "sections/hotsprings/hs-fullprice";
+@import "sections/hotsprings/hs-cwater";
+@import "sections/hotsprings/hs-reviews";
+@import "sections/hotsprings/hs-stock";
+@import "sections/hotsprings/hs-footer";
+
+@import "sections/footer";

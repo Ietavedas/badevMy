@@ -1,0 +1,37 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content="IE=edge,chrome=1")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title
+            | wedding
+
+        link(href="./styles/wedding-build.css" rel="stylesheet")
+
+    body
+        .wrapper
+            include ../main-common/header
+
+            .maincontent
+
+                //- include ../rs-common/rs-top-logo
+
+                include ../wedding/wedding-slidertop
+
+                //- include ../wedding/wedding-test
+
+                include ../wedding/wedding-main-container
+
+                include ../main-common/footer
+
+                //- .rest-overlay
+                //- .rest-overlay.rest-overlay--mid
+                //- .rest-overlay.rest-overlay--bottom
+                //- .rest-tomato-half
+                //- .rest-tomato-full
+
+        // block footer
+
+    script(src="./js/wedding-vendor.js")
+    script(src="./js/wedding-scripts.min.js")

@@ -1,0 +1,245 @@
+.main-menu {
+    width: 383px;
+
+    width: 624px; // default
+
+    width: 610px;
+
+    padding: 1vh 0 5vh 130px;
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    background: $white;
+
+    // background: #17c37b;
+}
+
+.main-menu__logo {
+    text-align: center;
+    background: $white;
+
+    img {
+        @include inlineblock();
+        max-width: 100%;
+    }
+}
+
+.main-menu__list-wrap {
+    padding: 0 100px 0 0;
+}
+
+.main-menu__list {
+    margin-top: 4vh;
+    position: relative;
+    border: 2px solid #dddddd;
+    padding: 20px 50px;
+    line-height: 1.8;
+}
+
+.main-menu__item-logo {
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%) rotate(-90deg);
+    transform: translateY(-50%) rotate(-90deg);
+    background: $white;
+
+    right: 78%;
+}
+
+.main-menu__title-text {
+    color: #c6c6c6;
+    @include open_sans(extrabold);
+    line-height: 1.2;
+    text-align: right;
+    background: $white;
+}
+
+.main-menu__title-text_t {
+    font-size: 27px;
+}
+
+.main-menu__title-text_b {
+    font-size: 50px;
+}
+
+.main-menu__item {
+    @extend %clearfix;
+}
+
+.main-menu__link {
+    @include open_sans(extrabold);
+    color: $black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .3s;
+    @include inlineblock(middle);
+    width: 85%;
+
+    &:hover {
+        color: $darkblue;
+    }
+}
+
+.main-menu__button-wrap {
+    margin: 2vh 0 0 50px;
+    width: 240px;
+}
+
+.main-menu__button {
+    @include open_sans(semibold);
+    color: $black;
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+    border: 1px solid $lightgrey;
+    margin-top: 9px;
+    @extend %clearfix;
+    text-align: center;
+    transition: .3s;
+
+    &:hover {
+        border: 1px solid #0074ad;
+
+        .cls-1 {
+            stroke: #0074ad;
+            transition: .3s;
+        }
+
+        .main-menu__button-text {
+            color: #0074ad;
+        }
+    }
+}
+
+.main-menu__button-i {
+    width: 36px;
+    @include inlineblock(middle);
+    transition: .3s;
+
+    .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: .3s;
+    }
+}
+
+.main-menu__button-text {
+    transition: .3s;
+    @include inlineblock(middle);
+    margin-left: 30px;
+}
+
+
+.main-menu__button_phone {
+    display: block;
+    text-decoration: none;
+    color: $black;
+    font-size: 20px;
+    padding: 16px;
+    margin-top: 9px;
+    @extend %clearfix;
+    text-align: center;
+    transition: .3s;
+
+    &:hover {
+
+        .main-menu__button-text_phone {
+            color: #0074ad;
+            transition: .3s;
+        }
+
+        .main-menu__button-i_phone {
+
+            .cls-1 {
+                stroke: #0074ad;
+            }
+        }
+    }
+}
+
+.main-menu__button-i_phone {
+    width: 16px;
+    @include inlineblock(middle);
+    margin-left: 10px;
+    transition: .3s;
+
+    .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: .3s;
+    }
+}
+
+.main-menu__button-text_phone {
+    @include inlineblock(middle);
+    transition: .3s;
+}
+
+.main-menu__lb {
+    margin: 1vh 0 0 50px;
+    line-height: 1.8;
+}
+
+.main-menu__i {
+    position: relative;
+
+    &:after {
+        content: '';
+        @include inlineblock(middle);
+        width: 100%;
+        height: 1px;
+        background: #e8e8e8;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    &:hover {
+        &:after {
+            content: '';
+            @include inlineblock(middle);
+            width: 100%;
+            height: 1px;
+            background: #e8e8e8;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            opacity: 1;
+            transition: opacity .3s;
+        }
+    }
+}
+
+.main-menu__l {
+    @include open_sans(extrabold);
+    color: $black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .3s;
+    @include inlineblock(middle);
+    background: $white;
+    position: relative;
+    z-index: 1;
+    padding: 0 15px 0 0;
+
+    &:hover {
+        color: $darkblue;
+    }
+}
+
+.main-menu__item-price {
+    color: $white;
+    background: #c6c6c6;
+    padding: 8px 8px;
+    position: absolute;
+    top: 24px;
+    right: -32px;
+}

@@ -1,0 +1,48 @@
+.wedding {
+    margin-top: 200px;
+
+    .container {
+        max-width: 1280px;
+    }
+}
+
+.wedding__wrapper {
+    display: flex;
+}
+
+.wedding__content {
+    width: 50%;
+}
+
+.wedding__picture {
+    width: 50%;
+}
+
+.wedding__content-heading {
+    @include open_sans(extrabold);
+    font-size: 40px;
+}
+
+
+.wedding__picture-wpap {
+    position: relative;
+}
+
+.wedding__picture-photo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    width: 100%;
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.wedding__picture-white {
+    background: #0BBCD6;
+    max-width: 627px;
+    min-height: 398px;
+}

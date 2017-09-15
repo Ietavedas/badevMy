@@ -1,0 +1,25 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content="IE=edge,chrome=1")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title
+            | bustour
+
+        link(href="./styles/bustour-build.css" rel="stylesheet")
+
+    body
+        .wrapper
+            include ../main-common/header
+
+            .maincontent
+
+                include ../bt-common/bt-logo-top
+
+                include ../bt-common/bt-main-container
+
+        // block footer
+
+    script(src="./js/bustour-vendor.js")
+    script(src="./js/bustour-scripts.min.js")

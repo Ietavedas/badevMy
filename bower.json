@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "jquery-ui": "^1.12.1",
+    "matchHeight": "https://github.com/liabru/jquery-match-height.git#^0.7.2",
+    "slick-carousel": "^1.7.1",
+    "lightgallery": "https://github.com/sachinchoolur/lightGallery.git#^1.6.0",
+    "bxslider-4": "https://github.com/stevenwanderski/bxslider-4.git#^4.2.12",
+    "bPopup": "bpopup#^0.11.0"
+  }
+}

@@ -1,0 +1,423 @@
+.search-form {
+    .container {
+        border: 2px solid #62b3d9;
+        // margin-top: 40px;
+        margin-bottom: 27px;
+    }
+
+    .search-apartments__item_bg{
+        .container{
+            border: 2px solid #f9f9f9;
+        }
+    }
+
+    .search__wrapper {
+        @extend %clearfix;
+
+        padding: 50px;
+        background: #f9f9f9;
+
+        max-width: 1192px;
+        margin: 0 auto;
+    }
+
+    .checkbox-label {
+        display: block;
+    }
+
+    // the first version
+    .search__filter {
+        max-width: 1192px;
+        margin: 0 auto;
+        background: #f9f9f9;
+
+        .search__filter-list {
+            display: flex;
+            justify-content: space-between;
+
+            width: 90%;
+            margin: 0 auto;
+            border-top: 1px solid #e6e6e6;
+            padding: 18px;
+        }
+
+        // the first version
+
+        .search__filter-item {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .filter {
+                position: absolute;
+                top: 0;
+                left: -9999px;
+
+                &:checked + .filter__input-checkbox {
+
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .filter__input-checkbox {
+                width: 17px;
+                height: 17px;
+                background: $white;
+                transition: .8s;
+                position: relative;
+                border: 1px solid #c6c6c6;
+                border-radius: 2px;
+                @include inlineblock(middle);
+
+                &:after {
+                    content: url('../assets/img/icons/search-check.png');
+                    display: block;
+                    // @include absolute-center;
+                    opacity: 0;
+                    transition: .8s;
+
+                    position: absolute;
+                    top: -5px;
+                    left: 2px;
+                }
+            }
+
+            .filter__input-checkbox-text {
+                @include inlineblock(middle);
+                margin-left: 20px;
+            }
+        }
+    }
+
+
+
+
+    .search__count {
+        float: left;
+        width: 25%;
+
+        border-right: 1px solid #e6e6e6;
+    }
+
+    .search {
+        // float: left;
+        // width: 50%;
+
+        text-align: center;
+    }
+
+    .search__promo {
+        float: left;
+        width: 25%;
+
+        border-left: 1px solid #e6e6e6;
+        padding: 0 0 0 33px;
+    }
+
+    .search__input-block {
+        // margin-top: 32px;
+
+        width: 172px;
+        @include inlineblock(middle);
+        margin-right: 49px;
+
+        &:first-child {
+            // margin-top: 0;
+        }
+    }
+
+    .search__count-text {
+        font-size: 12px;
+        margin-bottom: 3px;
+        text-align: left;
+    }
+
+    .search__block-input_grownups {
+        position: relative;
+        width: 172px;
+        @include inlineblock();
+    }
+
+    .search__block-input_children {
+        position: relative;
+        width: 172px;
+    }
+
+    .svg-i__grownups {
+        width: 18px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-right: 8px;
+
+        .cls-1,.cls-2 {
+            fill:none;
+            stroke:#000;
+            stroke-linecap:round;
+        }
+        .cls-1 {
+            stroke-linejoin:round;
+        }
+        .cls-2 {
+            stroke-miterlimit:10;
+        }
+    }
+
+    .svg-i__children {
+        width: 22px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-right: 8px;
+
+        .cls-1,.cls-2{
+            fill:none;stroke:#000;
+        }
+        .cls-1{
+            stroke-miterlimit:10;
+        }
+        .cls-2{
+            stroke-linecap:round;
+            stroke-linejoin:round;
+        }
+    }
+
+    .svg-i__calendar {
+        width: 28px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-right: 8px;
+
+        .cls-1 {
+            fill: none;
+            stroke: #000;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    }
+
+    .search__input {
+        width: 100%;
+        outline: 0;
+        border: 1px solid #d5d5d5;
+        padding: 9px;
+        background: #ededed;
+    }
+
+    .search__title-wrap {
+        margin-bottom: 40px;
+
+        .search__title {
+            @include open_sans(extrabold);
+            font-size: 25px;
+        }
+
+        .search__text {
+            font-size: 13px;
+        }
+    }
+
+    .search__date {
+        text-align: left;
+        width: 172px;
+        position: relative;
+    }
+
+    .search__date-block {
+        @include inlineblock(middle);
+        width: 172px;
+    }
+
+    .search__dash {
+        @include inlineblock(middle);
+        width: 30px;
+        height: 1px;
+        background: #9bd6f1;
+        margin-top: 20px;
+    }
+
+    .search__date-text {
+        font-size: 12px;
+        margin-bottom: 3px;
+        text-align: left;
+    }
+
+    .search__text {
+        font-size: 13px;
+    }
+
+    .search__input-date {
+        width: 100%;
+        outline: 0;
+        border: 1px solid #d5d5d5;
+        padding: 9px;
+        background: #ededed;
+    }
+
+    .search__filter-text {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .search__filter-input-block {
+        width: 171px;
+        position: relative;
+    }
+
+    .search__filter-check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 100%;
+        background: #5aafd7;
+        box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.07);
+
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .svg-i__check {
+        width: 15px;
+
+        .cls-1 {
+            fill: none;
+            stroke: #ffffff;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2px;
+        }
+    }
+
+    .search__filter-input {
+        width: 100%;
+        color: #a3a3a3;
+        font-size: 16px;
+        padding: 10px;
+        outline: 0;
+        border: 1px solid #c6c6c6;
+        border-radius: 2px;
+    }
+
+    .search-apartments__item {
+        display: block;
+        width: 100%;
+    }
+
+    .mix {
+        display: none;
+    }
+
+    .search__input-block-w {
+        position: relative;
+    }
+
+    .search__input-messenger {
+        @include inlineblock();
+        position: absolute;
+        top: 50%;
+        left: 180px;
+        transform: translateY(-50%);
+    }
+
+    .search__input_grownups-messenger-check {
+        width: 10px;
+
+        .check__cls-1 {
+            fill: none;
+            stroke: #57c63d;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2px;
+        }
+    }
+
+    .search__input_grownups-messenger-error {
+        width: 3px;
+
+        .error__cls-1 {
+            fill: none;
+            stroke: red;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2px;
+        }
+    }
+
+    .search__grownups-count-messenger-text {
+        font-size: 12px;
+        color: #ff0000;
+    }
+
+    .search__input_children-messenger-check {
+        width: 10px;
+
+        .check__cls-1 {
+            fill: none;
+            stroke: #57c63d;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2px;
+        }
+    }
+
+    .search__input_children-messenger-error {
+        width: 3px;
+
+        .error__cls-1 {
+            fill: none;
+            stroke: red;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2px;
+        }
+    }
+
+    .search__children-count-messenger-text {
+        font-size: 12px;
+        color: #ff0000;
+    }
+
+    .filter{
+        display:none;
+    }
+
+    .filter + label span {
+        display:inline-block;
+        width:17px;
+        height:17px;
+        margin:-4px 4px 0 0;
+        vertical-align:middle;
+        background:url(../assets/img/icons/checkbox.jpg) -18px top no-repeat;
+        cursor:pointer;
+    }
+
+    .filter:checked + label span {
+        background:url(../assets/img/icons/checkbox.jpg) 0px top no-repeat;
+    }
+
+    .checkbox-label{
+        cursor: pointer;
+    }
+}
+
+.earch-apartments__just-list{
+    .container{
+        border: 2px solid #fff;
+    }
+
+    h2{
+        font-size: 25px;
+        text-align: center;
+        font-family: open_sansextrabold;
+    }
+}
+

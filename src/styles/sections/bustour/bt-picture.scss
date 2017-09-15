@@ -1,0 +1,8 @@
+.bt-picture__block {
+    text-align: center;
+
+    img {
+        @include inlineblock();
+        max-width: 100%;
+    }
+}

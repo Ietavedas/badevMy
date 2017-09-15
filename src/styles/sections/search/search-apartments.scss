@@ -1,0 +1,270 @@
+.search-apartments {
+    margin-top: 40px;
+
+    .search-apartments__item {
+        @extend %clearfix;
+        margin-top: 16px;
+
+        .container {
+            max-width: 1280px;
+            @extend %clearfix;
+            padding: 40px;
+
+            &__border {
+                border: 2px solid $blue;
+            }
+        }
+    }
+
+    .search-apartments__item_bg {
+        background: #f9f9f9;
+
+        .container {
+            border-top: 1px solid #efefef;
+            border-bottom: 1px solid #efefef;
+        }
+    }
+
+    .search-apartments__name {
+        width: 70%;
+        float: left;
+    }
+
+    .search-apartments__d {
+        max-width: 340px;
+        float: right;
+        font-size: 13px;
+    }
+
+    .search-apartments__name-w {
+        font-size: 0;
+    }
+
+    .sa__list {
+        width: 38%;
+        @include inlineblock();
+
+        .sa__item {
+
+            &_hidden {
+                display: none;
+            }
+        }
+
+        .search-apartments__link {
+            display: block;
+            text-decoration: none;
+
+            img {
+                display: block;
+            }
+        }
+    }
+
+    .search-apartments__content {
+        @include inlineblock();
+        text-decoration: none;
+        width: 62%;
+
+        * {
+            font-size: 15px;
+        }
+    }
+
+    .search-apartments__description {
+        padding: 0 0 22px 0;
+        border-bottom: 1px solid #dddddd;
+        line-height: 1.8;
+    }
+
+    .search-apartments__title {
+        @include open_sans(extrabold);
+        color: $black;
+        text-decoration: none;
+        font-size: 25px;
+
+        span {
+            font-family: sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+
+    .search-apartments__price-wrap {
+        display: flex;
+        align-items: baseline;
+        margin-top: 10px;
+
+        .search-apartments__price {
+            @include open_sans(extrabold);
+            color: $black;
+            font-size: 25px;
+
+            &_strikeout {
+                font-size: 18px;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background: #a1a1a1;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .search-apartments__new-price {
+            @include open_sans(extrabold);
+            font-size: 25px;
+            color: $blue;
+            margin-left: 13px;
+        }
+    }
+
+    .search-apartments__buttons {
+        margin-top: 15px;
+    }
+
+    .search-apartments__button-book {
+        width: 195px;
+        @include inlineblock();
+        text-decoration: none;
+        @include open_sans(semibold);
+        font-size: 16px;
+        padding: 12px 0;
+        color: $white;
+        background-image: linear-gradient( 0deg, rgb(49,159,210) 0%, rgb(98,179,217) 100%);
+        box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.07);
+        text-align: center;
+
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient( 0deg, rgb(11,106,151) 0%, rgb(57,156,202) 100%);
+            opacity: 0;
+            transition: opacity .2s linear;
+        }
+
+        &:hover {
+            opacity: 1;
+
+            &:after {
+                content: '';
+                display: block;
+                opacity: 1;
+            }
+        }
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .search-apartments__button-read-more {
+        width: 195px;
+        @include inlineblock();
+        text-decoration: none;
+        @include open_sans(semibold);
+        font-size: 16px;
+        padding: 10px 0;
+        color: $black;
+        border: 2px solid #62b3d9;
+        text-align: center;
+        margin: 0 0 0 20px;
+
+        position: relative;
+
+        transition: border-color .2s;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient( 0deg, rgb(11,106,151) 0%, rgb(57,156,202) 100%);
+            opacity: 0;
+            transition: border-color .5s;
+        }
+
+        &:hover {
+            opacity: 1;
+            transition: border-color .5s;
+
+            border-color: #156d96;
+        }
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .search-apartments__d-wrapper {
+        border: 1px solid #dddddd;
+    }
+
+    .search-apartments__d-content {
+        padding: 20px;
+    }
+
+    .search-apartments__d-discount {
+        background: #76a2b7;
+        color: $white;
+        padding: 21px;
+    }
+
+    .search-apartments__d-cell {
+        width: 50%;
+        vertical-align: top;
+
+        span {
+            font-family: sans-serif;
+        }
+    }
+
+    .search-apartments__d-cell_t {
+        color: #909090;
+    }
+
+    .search-apartments__item_last {
+
+        .container {
+            border-bottom: 0 none;
+        }
+    }
+
+    .search-apartments__item-reserved {
+
+        .container__border-reserved {
+            border: 2px solid $red;
+        }
+
+        .sa__button-book-reserved {
+            width: 195px;
+            @include inlineblock();
+            text-decoration: none;
+            @include open_sans(semibold);
+            font-size: 16px;
+            padding: 12px 0;
+            text-align: center;
+            background: $red;
+            color: $white;
+        }
+    }
+}

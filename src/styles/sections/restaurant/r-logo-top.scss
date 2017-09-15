@@ -1,0 +1,157 @@
+.r-logo-top {
+    background: url('../assets/img/bg/r-logo-top.jpg') 0 0 no-repeat;
+    background-size: cover;
+    min-height: 555px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 10px 0;
+
+    text-align: center;
+    color: #fff;
+
+    .container {
+        max-width: 1100px;
+    }
+}
+
+.r-logo__bcrumbs {
+    margin-top: 50px;
+}
+
+.r-logo__bcrumbs-list {
+    @extend %clearfix;
+}
+
+.r-logo__bcrumbs-item {
+    @include inlineblock(middle);
+}
+
+.r-logo__bcrumbs-item-i {
+    width: 5px;
+
+    .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+    }
+}
+
+.r-logo__bcrumbs-link {
+    @include inlineblock(middle);
+    color: $white;
+    font-size: 15px;
+    text-decoration: none;
+    transition: .3s;
+
+    &:hover {
+        color: #68daff;
+    }
+}
+
+.r-logo__title {
+    @include open_sans(extrabold);
+    @include inlineblock();
+    color: $white;
+    font-size: 65px;
+    margin-top: 80px;
+    position: relative;
+
+    /* &:before {
+        content: url('../assets/img/content/hs-waterfun-d.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -47px;
+        left: -29px;
+        z-index: -1;
+    } */
+
+    @include w1460px {
+        .r-logo__word {
+            display: block;
+        }
+    }
+}
+
+.r-logo__word-t {
+
+    &:before {
+        content: url('../assets/img/content/hs-waterfun-d.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -47px;
+        left: -29px;
+        z-index: -1;
+
+        @include w1460px {
+            content: url('../assets/img/content/hs-waterfun-d.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -47px;
+            left: 114px;
+            z-index: -1;
+        }
+    }
+
+}
+
+.r-logo__text {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 40px;
+    line-height: 1.8;
+}
+
+.r-logo__wave {
+    width: 281px;
+    @include inlineblock();
+    margin-top: 40px;
+
+    .cls-1 {
+        fill: none;
+        stroke: #78c6eb;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+}
+
+.r-logo__svg-icons {
+    max-width: 1225px;
+    margin: 40px auto 20px auto;
+}
+
+.r-logo__svgi-item {
+    @include inlineblock();
+    width: 24%;
+    font-size: 0;
+    text-align: center;
+}
+
+.r-logo__svgi-i {
+    width: 61px;
+    @include inlineblock(middle);
+
+    .cls-1 {
+        fill: none;
+        stroke: #78c6eb;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+    }
+}
+
+.r-logo__svgi-text {
+    @include inlineblock(middle);
+    @include open_sans(semibold);
+    color: #b1def5;
+    font-size: 15px;
+    width: 50%;
+    text-align: left;
+    margin: 10px 0 0 8px;
+}
+
+.r-logo__svgi-item_br {
+    border-right: 1px solid #5384a0;
+}

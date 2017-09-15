@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>search</title>
+		<link href="./styles/search-build.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="overlay"></div>
+			<div class="header-wrap">
+				<header class="header">
+					<div class="navigation">
+						<div class="navigation__arrow"></div>
+						<div class="navigation__wrap">
+							<div class="navigation__logo"><img src="./assets/img/content/main-logo.png" alt=""></div>
+							<div class="navigation-block">
+								<div class="navigation-block__legend"><span class="navigation-block__top">комплекс</span><span class="navigation-block__bottom">Thermal</span></div>
+								<ul class="navigation__items">
+									<li class="navigation__item"><a class="navigation__link" href="#">Горячий источник</a></li>
+									<li class="navigation__item"><a class="navigation__link" href="#">Закрытый бассейн</a></li>
+									<li class="navigation__item"><a class="navigation__link" href="#">Комплекс саун</a></li>
+									<li class="navigation__item"><a class="navigation__link" href="#">Детям</a></li>
+									<li class="navigation__item"><a class="navigation__link" href="#">Spa и фитнес</a></li>
+									<li class="navigation__item"><a class="navigation__link" href="#">Кафе</a></li>
+								</ul>
+								<div class="navigation-block__price">
+									 от <span>220</span>руб.</div>
+							</div>
+							<ul class="navigation__items navigation__items--line-wrap js-navigation__items">
+								<li class="navigation__item navigation__item--line" data-block="rest"><a class="navigation__link" href="#">Рестораны</a></li>
+								<li class="navigation__item navigation__item--line" data-block="num"><a class="navigation__link" href="#">Номера</a></li>
+								<li class="navigation__item navigation__item--line" data-block="sw"><a class="navigation__link" href="#">Свадьбы и банкеты</a></li>
+								<li class="navigation__item navigation__item--line" data-block="recr"><a class="navigation__link" href="#">Отдых</a></li>
+								<li class="navigation__item navigation__item--line" data-block="tour"><a class="navigation__link" href="#">Автобусный тур</a></li>
+							</ul><a class="btn-nav btn-nav--ticket" href="#">Купить билет</a><a class="btn-nav btn-nav--room" href="#">Найти номер</a><a class="header__phone" href="tel:+7 351 200 3333">+7 351 200 3333</a>
+						</div>
+						<div class="menu-hover">
+							<div class="menu-hover__inner" data-block="rest"><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">De Luxe</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Полулюкс</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Стандарт +</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Стандарт</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Эконом</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Коттедж в аренду с сауной (10 человек)</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a></div>
+							<div class="menu-hover__inner" data-block="num"><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">De Luxe</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Полулюкс</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Стандарт +</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Стандарт</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a></div>
+							<div class="menu-hover__inner" data-block="sw"><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">De Luxe</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Полулюкс</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Стандарт +</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a></div>
+							<div class="menu-hover__inner" data-block="recr"><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">De Luxe</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Полулюкс</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a></div>
+							<div class="menu-hover__inner" data-block="tour"><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">De Luxe</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a></div>
+						</div>
+					</div>
+					<div class="header__services"><img class="logo-fix" src="./assets/img/content/ht-logo.png">
+						<div class="hamburger">
+							<div class="burger-menu burger-menu--closed">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div><span class="hamburger-label">Все услуги</span>
+						</div>
+					</div>
+					<nav class="nav">
+						<ul class="nav__items">
+							<li class="nav__item"> <a href="#">Акции</a></li>
+							<li class="nav__item"><a href="#">Новинки</a></li>
+							<li class="nav__item"><a href="#">Мероприятия</a></li>
+							<li class="nav__item"><a href="#">Фото и видео</a></li>
+							<li class="nav__item"><a href="#">Продажа аппартаментов</a></li>
+							<li class="nav__item"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__contact"><a class="header__phone" href="tel:+7 351 200 3333">+7 351 200 3333
+							<svg viewBox="0 0 15.95 15.95">
+								<g>
+									<path class="cls-1" d="M4.3,5.73a1.85,1.85,0,0,0,2.39,0,1.78,1.78,0,0,0-.23-2.48l-2-2A2.08,2.08,0,0,0,1.55,1L1,1.48A1.8,1.8,0,0,0,.5,2.81a13,13,0,0,0,4,8.69,13,13,0,0,0,8.69,4,1.8,1.8,0,0,0,1.32-.53l.51-.51a2.08,2.08,0,0,0-.27-2.9l-2-2a1.78,1.78,0,0,0-2.48-.23,1.85,1.85,0,0,0,0,2.39"></path>
+								</g>
+							</svg></a><a class="header__sodial header__sodial--vk" href="">
+							<svg viewBox="0 0 18 14">
+								<g>
+									<polyline class="cls-1" points="0.5 0.5 10.5 13.5 10.5 0.5 8.5 0.5"></polyline>
+									<polyline class="cls-1" points="17.5 0.5 10.5 7.5 17.5 13.5"></polyline>
+								</g>
+							</svg></a><a class="header__sodial header__sodial--inst" href="">
+							<svg viewBox="0 0 17 17">
+								<g>
+									<rect class="cls-1" x="0.5" y="0.5" width="16" height="16"></rect>
+									<circle class="cls-1" cx="8.5" cy="8.5" r="3.08"></circle>
+									<circle class="cls-1" cx="13.42" cy="3.58" r="0.62"></circle>
+								</g>
+							</svg></a></div><a class="header__phone-link" href=""><img src="./assets/img/icons/ht-phone.png" alt=""></a>
+				</header>
+				<div class="header-laptop">
+					<nav class="nav">
+						<ul class="nav__items">
+							<li class="nav__item nav__item--all"><a href="">Все услуги</a></li>
+							<li class="nav__item"><a href="">Акции</a></li>
+							<li class="nav__item"><a href="">Новинки</a></li>
+							<li class="nav__item"><a href="">Мероприятия</a></li>
+							<li class="nav__item"><a href="">Фото и видео</a></li>
+							<li class="nav__item"><a href="">Продажа аппартаментов</a></li>
+							<li class="nav__item"><a href="">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__contact"><a class="header__phone-link" href="tel:+7 351 200 3333">+7 351 200 3333</a><a class="header__sodial header__sodial--vk" href="#"></a><a class="header__sodial header__sodial--inst" href="#"></a></div>
+				</div>
+			</div>
+			<div class="sf-popup-form-popup"><a class="b-close sf-popup__close" href="#">
+					<div class="sf-popup__close-w"></div></a>
+				<div class="sf-popup__logo">
+					<div class="sf-popup__heading-top">Бронирование номера:</div>
+					<div class="sf-popup__heading-bottom">Полулюкс - однокомнатный</div>
+				</div>
+				<div class="sf-popup__form-wrap">
+					<div class="sf-popup__form-container">
+						<form class="sf-popup__form" action="" method="get">
+							<div class="sf-popup__date-wrap">
+								<div class="sf-popup__date-block">
+									<div class="sf-popup__date-text">Дата заезда:</div>
+									<div class="sf-popup__date">
+										<input class="sf-popup__input-date sf-popup__input-date_in" type="text" name="check-in-date">
+										<div class="svg-i__calendar">
+											<svg viewBox="0 0 33.19 20.72">
+												<g>
+													<rect class="cls-1" x="13.67" y="2.72" width="19.03" height="17.5" rx="1.59" ry="1.59"></rect>
+													<line class="cls-1" x1="22.14" y1="11.79" x2="24.22" y2="11.79"></line>
+													<line class="cls-1" x1="27.14" y1="11.79" x2="29.22" y2="11.79"></line>
+													<line class="cls-1" x1="17.14" y1="11.79" x2="19.22" y2="11.79"></line>
+													<line class="cls-1" x1="22.14" y1="15.79" x2="24.22" y2="15.79"></line>
+													<line class="cls-1" x1="27.14" y1="15.79" x2="29.22" y2="15.79"></line>
+													<line class="cls-1" x1="22.14" y1="7.79" x2="24.22" y2="7.79"></line>
+													<line class="cls-1" x1="28.69" y1="0.5" x2="28.69" y2="4.57"></line>
+													<line class="cls-1" x1="17.67" y1="0.5" x2="17.67" y2="4.57"></line>
+													<line class="cls-1" x1="17.14" y1="7.79" x2="19.22" y2="7.79"></line>
+													<line class="cls-1" x1="7.75" y1="11.79" x2="0.5" y2="11.79"></line>
+													<polyline class="cls-1" points="4.77 8.81 7.75 11.79 4.77 14.77"></polyline>
+												</g>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="sf-popup__dash"></div>
+								<div class="sf-popup__date-block">
+									<div class="sf-popup__date-text">Дата выезда:</div>
+									<div class="sf-popup__date">
+										<input class="sf-popup__input-date sf-popup__input-date_out" type="text" name="">
+										<div class="svg-i__calendar">
+											<svg viewBox="0 0 33.19 20.72">
+												<g>
+													<rect class="cls-1" x="13.67" y="2.72" width="19.03" height="17.5" rx="1.59" ry="1.59"></rect>
+													<line class="cls-1" x1="22.14" y1="11.79" x2="24.22" y2="11.79"></line>
+													<line class="cls-1" x1="27.14" y1="11.79" x2="29.22" y2="11.79"></line>
+													<line class="cls-1" x1="17.14" y1="11.79" x2="19.22" y2="11.79"></line>
+													<line class="cls-1" x1="22.14" y1="15.79" x2="24.22" y2="15.79"></line>
+													<line class="cls-1" x1="27.14" y1="15.79" x2="29.22" y2="15.79"></line>
+													<line class="cls-1" x1="22.14" y1="7.79" x2="24.22" y2="7.79"></line>
+													<line class="cls-1" x1="28.69" y1="0.5" x2="28.69" y2="4.57"></line>
+													<line class="cls-1" x1="17.67" y1="0.5" x2="17.67" y2="4.57"></line>
+													<line class="cls-1" x1="17.14" y1="7.79" x2="19.22" y2="7.79"></line>
+													<line class="cls-1" x1="7.75" y1="11.79" x2="0.5" y2="11.79"></line>
+													<polyline class="cls-1" points="4.77 8.81 7.75 11.79 4.77 14.77"></polyline>
+												</g>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sf-popup__wrapper">
+								<div class="sf-popup__counter-w">
+									<div class="sf-popup__count">
+										<div class="sf-popup__input-block">
+											<div class="sf-popup__count-text">Кол-во гостей</div>
+											<div class="sf-popup__input-block-w">
+												<div class="sf-popup__block-input_grownups">
+													<input class="sf-popup__input sf-popup__input_grownups" type="text" name="" value="1">
+													<div class="svg-i__grownups">
+														<svg viewBox="0 0 19 21">
+															<g>
+																<path class="cls-1" d="M5.5,12.5s-5,2-5,3c0,2.71,2,5,9,5"></path>
+																<path class="cls-1" d="M13.5,12.5s5,2,5,3c0,2.71-2,5-9,5"></path>
+																<path class="cls-2" d="M9.5,11.5c-2.36,0-4.78-3.68-4.78-6.72S7.14.5,9.5.5"></path>
+																<path class="cls-2" d="M9.5,11.5c2.36,0,4.78-3.68,4.78-6.72S11.86.5,9.5.5"></path>
+															</g>
+														</svg>
+													</div>
+												</div>
+												<!-- .sf-popup__input-messenger.sf-popup__input_grownups-messenger-check
+												svg(viewBox="0 0 9 9")
+												    g
+												        polyline(class="check__cls-1" points="1 6 3 8 8 1")
+												
+												-->
+												<div class="sf-popup__input-messenger sf-popup__input_grownups-messenger-error"></div>
+											</div>
+											<div class="sf-popup__grownups-count-messenger-text"></div>
+										</div>
+										<!-- .sf-popup__input-block
+										.sf-popup__count-text
+										    | Кол-во детей до 12 лет:
+										
+										.sf-popup__input-block-w
+										
+										    .sf-popup__block-input_children
+										
+										        input(type="text" name="number-of-children" value="1").sf-popup__input.sf-popup__input-children
+										
+										        .svg-i__children
+										            svg(viewBox="0 0 21.4 21.4")
+										                g
+										                    circle(class="cls-1" cx="10.7" cy="10.7" r="10.2")
+										                    line(class="cls-2" x1="12.7" y1="7.59" x2="12.7" y2="10.18")
+										                    line(class="cls-2" x1="8.7" y1="7.59" x2="8.7" y2="10.18")
+										                    path(class="cls-2" d="M6.05,15.28a6.51,6.51,0,0,0,9.29,0")
+										
+										    .sf-popup__input-messenger.sf-popup__input_children-messenger-check
+										        svg(viewBox="0 0 9 9")
+										            g
+										                polyline(class="check__cls-1" points="1 6 3 8 8 1")
+										
+										    .sf-popup__input-messenger.sf-popup__input_children-messenger-error
+										
+										.sf-popup__children-count-messenger-text
+										
+										-->
+										<!-- promo-->
+										<!-- .sf-popup__promo
+										.sf-popup__text
+										    | Промокод:
+										
+										.sf-popup__promo-input-block
+										    input(type="text" name="" placeholder="Введите код").sf-popup__input
+										
+										    .sf-popup__check
+										        .svg-i__check
+										            svg(viewBox="0 0 13.03 11.82")
+										                g
+										                    path(class="cls-1" d="M1,7s3.82,3.69,3.82,3.82S12,1,12,1")
+										
+										-->
+										<!-- additional places-->
+										<!-- .sf-popup__add-pl-wrapper
+										.sf-popup__add-pl
+										    input(type="text" name="" value="0" maxlength="1").sf-popup__spinner
+										
+										.sf-popup__add-pl-text
+										    .sf-popup__add-pl-text-w
+										        div
+										            | Дополнительные
+										        div
+										            | места
+										
+										-->
+										<!-- price-->
+										<div class="sf-popup__price">
+											<div class="sf-popup__price-text">Стоимость аренды за 1 день:</div>
+											<div class="sf-popup__price-value">35 200 руб.</div>
+										</div>
+									</div>
+									<div class="sf-popup__name">
+										<div class="sf-popup__svg-name-w">
+											<div class="sf-popup__svg-name">
+												<svg viewBox="0 0 19 21">
+													<g>
+														<path class="cls-1" d="M5.5,12.5s-5,2-5,3c0,2.71,2,5,9,5"></path>
+														<path class="cls-1" d="M13.5,12.5s5,2,5,3c0,2.71-2,5-9,5"></path>
+														<path class="cls-2" d="M9.5,11.5c-2.36,0-4.78-3.68-4.78-6.72S7.14.5,9.5.5"></path>
+														<path class="cls-2" d="M9.5,11.5c2.36,0,4.78-3.68,4.78-6.72S11.86.5,9.5.5"></path>
+													</g>
+												</svg>
+											</div>
+										</div>
+										<div class="sf-popup__name-wrapper">
+											<!-- surname-->
+											<div class="sf-popup__input-block">
+												<div class="sf-popup__input-text">Фамилия:</div>
+												<div class="sf-popup__input-block-w">
+													<div class="sf-popup__block-input-name">
+														<input class="sf-popup__input" type="text" name="" value="">
+													</div>
+													<div class="sf-popup__input-messenger sf-popup__input-messenger-check">
+														<!-- svg(viewBox="0 0 9 9")
+														g
+														    polyline(class="check__cls-1" points="1 6 3 8 8 1")
+														--><span>*</span>
+													</div>
+													<div class="sf-popup__input-messenger sf-popup__input-messenger-error"></div>
+												</div>
+												<div class="sf-popup__messenger-text"></div>
+											</div>
+											<!-- name-->
+											<div class="sf-popup__input-block">
+												<div class="sf-popup__input-text">Имя:</div>
+												<div class="sf-popup__input-block-w">
+													<div class="sf-popup__block-input-name">
+														<input class="sf-popup__input" type="text" name="" value="">
+													</div>
+													<div class="sf-popup__input-messenger sf-popup__input-messenger-check">
+														<!-- svg(viewBox="0 0 9 9")
+														g
+														    polyline(class="check__cls-1" points="1 6 3 8 8 1")
+														--><span>*</span>
+													</div>
+													<div class="sf-popup__input-messenger sf-popup__input-messenger-error"></div>
+												</div>
+												<div class="sf-popup__messenger-text"></div>
+											</div>
+											<!-- patronymic-->
+											<div class="sf-popup__input-block">
+												<div class="sf-popup__input-text">Отчество:</div>
+												<div class="sf-popup__input-block-w">
+													<div class="sf-popup__block-input-name">
+														<input class="sf-popup__input" type="text" name="" value="">
+													</div>
+													<div class="sf-popup__input-messenger sf-popup__input-messenger-check">
+														<!-- svg(viewBox="0 0 9 9")
+														g
+														    polyline(class="check__cls-1" points="1 6 3 8 8 1")
+														--><span>*</span>
+													</div>
+													<div class="sf-popup__input-messenger sf-popup__input-messenger-error"></div>
+												</div>
+												<div class="sf-popup__messenger-text"></div>
+											</div>
+											<div class="sf-popup__stripe-w">
+												<div class="sf-popup__stripe"></div>
+												<div class="sf-popup__svg-phone-w">
+													<div class="sf-popup__svg-phone">
+														<svg viewBox="0 0 15.95 15.95">
+															<g>
+																<path class="cls-1" d="M4.3,5.73a1.85,1.85,0,0,0,2.39,0,1.78,1.78,0,0,0-.23-2.48l-2-2A2.08,2.08,0,0,0,1.55,1L1,1.48A1.8,1.8,0,0,0,.5,2.81a13,13,0,0,0,4,8.69,13,13,0,0,0,8.69,4,1.8,1.8,0,0,0,1.32-.53l.51-.51a2.08,2.08,0,0,0-.27-2.9l-2-2a1.78,1.78,0,0,0-2.48-.23,1.85,1.85,0,0,0,0,2.39"></path>
+															</g>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<!-- phone-->
+											<div class="sf-popup__input-block">
+												<div class="sf-popup__input-text">Телефон:</div>
+												<div class="sf-popup__input-block-w">
+													<div class="sf-popup__block-input-name">
+														<input class="sf-popup__input sf-popup__input-tel" type="text" name="" value="" placeholder="+7 ( 000 ) 000 – 00 – 00">
+													</div>
+													<div class="sf-popup__input-messenger sf-popup__input-messenger-check">
+														<!-- svg(viewBox="0 0 9 9")
+														g
+														    polyline(class="check__cls-1" points="1 6 3 8 8 1")
+														--><span>*</span>
+													</div>
+													<div class="sf-popup__input-messenger sf-popup__input-messenger-error"></div>
+												</div>
+												<div class="sf-popup__messenger-text"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sf-popup__submit">
+								<input class="sf-popup__item-button sf-popup__item-button_main" type="submit" value="Забронировать">
+								<input class="sf-popup__item-button sf-popup__item-button_hover" type="submit" value="Забронировать">
+							</div>
+							<div class="sf-popup__information">* Обязательно для заполнения</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="maincontent">
+				<section class="search-logo-top">
+					<div class="container">
+						<div class="search-logo__bcrumbs">
+							<ul class="search-logo__bcrumbs-list">
+								<li class="search-logo__bcrumbs-item">Главная</li>
+								<li class="search-logo__bcrumbs-item">
+									<div class="search-logo__bcrumbs-item-i">
+										<svg viewBox="0 0 5 8">
+											<g>
+												<polyline class="cls-1" points="1 1 4 4 1 7"></polyline>
+											</g>
+										</svg>
+									</div>
+								</li>
+								<li class="search-logo__bcrumbs-item"><a class="search-logo__bcrumbs-link" href="#">Номера</a></li>
+							</ul>
+						</div>
+						<div class="search-logo__title"><span class="search-logo__word-t">Подбор номеров</span></div>
+						<div class="search-logo__text">
+							<p>Мы предлагаем к проживанию удобные номера с современной отделкой. Всего на территории</p>
+							<p>комплекса имеется 3 корпуса с номерами разной степени комфортности.</p>
+						</div>
+						<div class="search-logo__wave">
+							<svg viewBox="0 0 281 13.74">
+								<path class="cls-1" d="M.5,10.08,11.75,3.65a23.94,23.94,0,0,1,23.75,0l11.25,6.43a23.94,23.94,0,0,0,23.75,0L81.75,3.65a23.94,23.94,0,0,1,23.75,0l11.25,6.43a23.94,23.94,0,0,0,23.75,0l11.25-6.43a23.94,23.94,0,0,1,23.75,0l11.25,6.43a23.94,23.94,0,0,0,23.75,0l11.25-6.43a23.94,23.94,0,0,1,23.75,0l11.25,6.43a23.94,23.94,0,0,0,23.75,0"></path>
+							</svg>
+						</div>
+					</div>
+				</section>
+				<div class="search-main-container">
+					<section class="search-form">
+						<form action="" method="post">
+							<div class="search__wrapper">
+								<!-- .search__count.search__mathHeight
+								.search__input-block
+								    .search__count-text
+								        | Кол-во гостей старше 12 лет:
+								    .search__input-block-w
+								        .search__block-input_grownups
+								            input(type="text" name="" value="1").search__input.search__input_grownups
+								            .svg-i__grownups
+								                svg(viewBox="0 0 19 21")
+								                    g
+								                        path(class="cls-1" d="M5.5,12.5s-5,2-5,3c0,2.71,2,5,9,5")
+								                        path(class="cls-1" d="M13.5,12.5s5,2,5,3c0,2.71-2,5-9,5")
+								                        path(class="cls-2" d="M9.5,11.5c-2.36,0-4.78-3.68-4.78-6.72S7.14.5,9.5.5")
+								                        path(class="cls-2" d="M9.5,11.5c2.36,0,4.78-3.68,4.78-6.72S11.86.5,9.5.5")
+								        .search__input-messenger.search__input_grownups-messenger-check
+								            svg(viewBox="0 0 9 9")
+								                g
+								                    polyline(class="check__cls-1" points="1 6 3 8 8 1")
+								        .search__input-messenger.search__input_grownups-messenger-error
+								    .search__grownups-count-messenger-text
+								.search__input-block
+								    .search__count-text
+								        | Кол-во детей до 12 лет:
+								    .search__input-block-w
+								        .search__block-input_children
+								            input(type="text" name="" value="1").search__input.search__input-children
+								            .svg-i__children
+								                svg(viewBox="0 0 21.4 21.4")
+								                    g
+								                        circle(class="cls-1" cx="10.7" cy="10.7" r="10.2")
+								                        line(class="cls-2" x1="12.7" y1="7.59" x2="12.7" y2="10.18")
+								                        line(class="cls-2" x1="8.7" y1="7.59" x2="8.7" y2="10.18")
+								                        path(class="cls-2" d="M6.05,15.28a6.51,6.51,0,0,0,9.29,0")
+								        .search__input-messenger.search__input_children-messenger-check
+								            svg(viewBox="0 0 9 9")
+								                g
+								                    polyline(class="check__cls-1" points="1 6 3 8 8 1")
+								        .search__input-messenger.search__input_children-messenger-error
+								    .search__children-count-messenger-text
+								-->
+								<div class="search">
+									<div class="search__title-wrap">
+										<div class="search__title">Поиск номера</div>
+										<div class="search__text">Гарантированное заселение</div>
+									</div>
+									<div class="search__date-wrap">
+										<div class="search__input-block">
+											<div class="search__count-text">Кол-во гостей</div>
+											<div class="search__input-block-w">
+												<div class="search__block-input_grownups">
+													<input class="search__input search__input_grownups" type="text" name="" value="1">
+													<div class="svg-i__grownups">
+														<svg viewBox="0 0 19 21">
+															<g>
+																<path class="cls-1" d="M5.5,12.5s-5,2-5,3c0,2.71,2,5,9,5"></path>
+																<path class="cls-1" d="M13.5,12.5s5,2,5,3c0,2.71-2,5-9,5"></path>
+																<path class="cls-2" d="M9.5,11.5c-2.36,0-4.78-3.68-4.78-6.72S7.14.5,9.5.5"></path>
+																<path class="cls-2" d="M9.5,11.5c2.36,0,4.78-3.68,4.78-6.72S11.86.5,9.5.5"></path>
+															</g>
+														</svg>
+													</div>
+												</div>
+												<!-- .search__input-messenger.search__input_grownups-messenger-check
+												svg(viewBox="0 0 9 9")
+												    g
+												        polyline(class="check__cls-1" points="1 6 3 8 8 1")
+												-->
+												<div class="search__input-messenger search__input_grownups-messenger-error"></div>
+											</div>
+											<div class="search__grownups-count-messenger-text"></div>
+										</div>
+										<div class="search__date-block">
+											<div class="search__date-text">Дата заезда:</div>
+											<div class="search__date">
+												<input class="search__input-date search__input-date_in" type="text" name="">
+												<div class="svg-i__calendar">
+													<svg viewBox="0 0 33.19 20.72">
+														<g>
+															<rect class="cls-1" x="13.67" y="2.72" width="19.03" height="17.5" rx="1.59" ry="1.59"></rect>
+															<line class="cls-1" x1="22.14" y1="11.79" x2="24.22" y2="11.79"></line>
+															<line class="cls-1" x1="27.14" y1="11.79" x2="29.22" y2="11.79"></line>
+															<line class="cls-1" x1="17.14" y1="11.79" x2="19.22" y2="11.79"></line>
+															<line class="cls-1" x1="22.14" y1="15.79" x2="24.22" y2="15.79"></line>
+															<line class="cls-1" x1="27.14" y1="15.79" x2="29.22" y2="15.79"></line>
+															<line class="cls-1" x1="22.14" y1="7.79" x2="24.22" y2="7.79"></line>
+															<line class="cls-1" x1="28.69" y1="0.5" x2="28.69" y2="4.57"></line>
+															<line class="cls-1" x1="17.67" y1="0.5" x2="17.67" y2="4.57"></line>
+															<line class="cls-1" x1="17.14" y1="7.79" x2="19.22" y2="7.79"></line>
+															<line class="cls-1" x1="7.75" y1="11.79" x2="0.5" y2="11.79"></line>
+															<polyline class="cls-1" points="4.77 8.81 7.75 11.79 4.77 14.77"></polyline>
+														</g>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="search__dash"></div>
+										<div class="search__date-block">
+											<div class="search__date-text">Дата выезда:</div>
+											<div class="search__date">
+												<input class="search__input-date search__input-date_out" type="text" name="">
+												<div class="svg-i__calendar">
+													<svg viewBox="0 0 33.19 20.72">
+														<g>
+															<rect class="cls-1" x="13.67" y="2.72" width="19.03" height="17.5" rx="1.59" ry="1.59"></rect>
+															<line class="cls-1" x1="22.14" y1="11.79" x2="24.22" y2="11.79"></line>
+															<line class="cls-1" x1="27.14" y1="11.79" x2="29.22" y2="11.79"></line>
+															<line class="cls-1" x1="17.14" y1="11.79" x2="19.22" y2="11.79"></line>
+															<line class="cls-1" x1="22.14" y1="15.79" x2="24.22" y2="15.79"></line>
+															<line class="cls-1" x1="27.14" y1="15.79" x2="29.22" y2="15.79"></line>
+															<line class="cls-1" x1="22.14" y1="7.79" x2="24.22" y2="7.79"></line>
+															<line class="cls-1" x1="28.69" y1="0.5" x2="28.69" y2="4.57"></line>
+															<line class="cls-1" x1="17.67" y1="0.5" x2="17.67" y2="4.57"></line>
+															<line class="cls-1" x1="17.14" y1="7.79" x2="19.22" y2="7.79"></line>
+															<line class="cls-1" x1="7.75" y1="11.79" x2="0.5" y2="11.79"></line>
+															<polyline class="cls-1" points="4.77 8.81 7.75 11.79 4.77 14.77"></polyline>
+														</g>
+													</svg>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- .search__promo.search__mathHeight
+								.search__filter-text
+								    | Промокод:
+								.search__filter-input-block
+								    input(type="text" name="" placeholder="Введите код").search__filter-input
+								    .search__filter-check
+								        .svg-i__check
+								            svg(viewBox="0 0 13.03 11.82")
+								                g
+								                    path(class="cls-1" d="M1,7s3.82,3.69,3.82,3.82S12,1,12,1")
+								-->
+							</div>
+							<div class="search__filter">
+								<ul class="cd-filters search__filter-list">
+									<li class="search__filter-item">
+										<label class="checkbox-label" for="checkbox1">
+											<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+											<div class="filter__input-checkbox"></div>
+											<div class="filter__input-checkbox-text">1</div>
+										</label>
+									</li>
+									<li class="search__filter-item">
+										<label class="checkbox-label" for="checkbox2">
+											<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+											<div class="filter__input-checkbox"></div>
+											<div class="filter__input-checkbox-text">2</div>
+										</label>
+									</li>
+									<li class="search__filter-item">
+										<label class="checkbox-label" for="checkbox3">
+											<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+											<div class="filter__input-checkbox"></div>
+											<div class="filter__input-checkbox-text">3</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+							<section class="search-apartments">
+								<ul class="search-apartments__list">
+									<li class="mix check1 search-apartments__item">
+										<div class="container container__border">
+											<div class="search-apartments__name">
+												<div class="search-apartments__name-w">
+													<ul class="sa__list">
+														<li class="sa__item" data-src="./assets/img/content/apartments-1.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-1.jpg" alt=""></a></li>
+														<li class="sa__item sa__item_hidden" data-src="./assets/img/content/apartments-2.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-2.jpg" alt=""></a></li>
+														<li class="sa__item sa__item_hidden" data-src="./assets/img/content/apartments-3.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-3.jpg" alt=""></a></li>
+													</ul>
+													<div class="search-apartments__content">
+														<div class="search-apartments__description"><a class="search-apartments__title" href="#">1 Luxe</a>
+															<div class="search-apartments__desc">Однокомнатный номер с двуспальной кроватью и диваном.</div>
+														</div>
+														<div class="search-apartments__price-wrap">
+															<!-- .search-apartments__price
+															| от 6 200 руб.
+															
+															-->
+															<!-- new value-->
+															<div class="search-apartments__price search-apartments__price_strikeout">от 6 200 руб.</div>
+															<div class="search-apartments__new-price">5 700 руб.</div>
+														</div>
+														<div class="search-apartments__buttons"><a class="search-apartments__button-book" href="#"><span>Забронировать</span></a><a class="search-apartments__button-read-more" href="#"><span>Подробнее</span></a></div>
+													</div>
+												</div>
+											</div>
+											<div class="search-apartments__d">
+												<div class="search-apartments__d-w">
+													<div class="search-apartments__d-wrapper">
+														<div class="search-apartments__d-content">
+															<table class="search-apartments__d-table">
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Вместимость:</td>
+																	<td class="search-apartments__d-cell">до 4х гостей</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Площадь:</td>
+																	<td class="search-apartments__d-cell">31 м2</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Вид из окна:</td>
+																	<td class="search-apartments__d-cell">на территорию комплекса / на лес</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Корпус:</td>
+																	<td class="search-apartments__d-cell"><span>№3</span></td>
+																</tr>
+															</table>
+														</div>
+														<div class="search-apartments__d-discount">
+															<p>В августе скидка на эти номера 30% при бронировании более чем на 10 дней</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mix check2 search-apartments__item">
+										<div class="container container__border">
+											<div class="search-apartments__name">
+												<div class="search-apartments__name-w">
+													<ul class="sa__list">
+														<li class="sa__item sa__item_hidden" data-src="./assets/img/content/apartments-1.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-1.jpg" alt=""></a></li>
+														<li class="sa__item" data-src="./assets/img/content/apartments-2.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-2.jpg" alt=""></a></li>
+														<li class="sa__item sa__item_hidden" data-src="./assets/img/content/apartments-3.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-3.jpg" alt=""></a></li>
+													</ul>
+													<div class="search-apartments__content">
+														<div class="search-apartments__description"><a class="search-apartments__title" href="#">2 Luxe</a>
+															<div class="search-apartments__desc">Однокомнатный номер с двуспальной кроватью и диваном.</div>
+														</div>
+														<div class="search-apartments__price-wrap">
+															<div class="search-apartments__price">от 8 500 руб.</div>
+															<!-- new value-->
+															<!-- .search-apartments__price.search-apartments__price_strikeout
+															| от 6 200 руб.
+															
+															-->
+															<!-- .search-apartments__new-price
+															| 5 700 руб.
+															
+															-->
+														</div>
+														<div class="search-apartments__buttons"><a class="search-apartments__button-book" href="#"><span>Забронировать</span></a><a class="search-apartments__button-read-more" href="#"><span>Подробнее</span></a></div>
+													</div>
+												</div>
+											</div>
+											<div class="search-apartments__d">
+												<div class="search-apartments__d-w">
+													<div class="search-apartments__d-wrapper">
+														<div class="search-apartments__d-content">
+															<table class="search-apartments__d-table">
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Вместимость:</td>
+																	<td class="search-apartments__d-cell">до 4х гостей</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Площадь:</td>
+																	<td class="search-apartments__d-cell">31 м2</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Вид из окна:</td>
+																	<td class="search-apartments__d-cell">на территорию комплекса / на лес</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Корпус:</td>
+																	<td class="search-apartments__d-cell"><span>№3</span></td>
+																</tr>
+															</table>
+														</div>
+														<div class="search-apartments__d-discount">
+															<p>В августе скидка на эти номера 30% при бронировании более чем на 10 дней</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mix check3 search-apartments__item">
+										<div class="container container__border">
+											<div class="search-apartments__name">
+												<div class="search-apartments__name-w">
+													<ul class="sa__list">
+														<li class="sa__item sa__item_hidden" data-src="./assets/img/content/apartments-1.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-1.jpg" alt=""></a></li>
+														<li class="sa__item" data-src="./assets/img/content/apartments-2.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-2.jpg" alt=""></a></li>
+														<li class="sa__item sa__item_hidden" data-src="./assets/img/content/apartments-3.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-3.jpg" alt=""></a></li>
+													</ul>
+													<div class="search-apartments__content">
+														<div class="search-apartments__description"><a class="search-apartments__title" href="#">3 Люкс однокомнатный</a>
+															<div class="search-apartments__desc">Однокомнатный номер с двуспальной кроватью и диваном.</div>
+														</div>
+														<div class="search-apartments__price-wrap">
+															<div class="search-apartments__price">от 3 000 руб.</div>
+															<!-- new value-->
+															<!-- .search-apartments__price.search-apartments__price_strikeout
+															| от 6 200 руб.
+															
+															-->
+															<!-- .search-apartments__new-price
+															| 5 700 руб.
+															
+															-->
+														</div>
+														<div class="search-apartments__buttons"><a class="search-apartments__button-book" href="#"><span>Забронировать</span></a><a class="search-apartments__button-read-more" href="#"><span>Подробнее</span></a></div>
+													</div>
+												</div>
+											</div>
+											<div class="search-apartments__d">
+												<div class="search-apartments__d-w">
+													<div class="search-apartments__d-wrapper">
+														<div class="search-apartments__d-content">
+															<table class="search-apartments__d-table">
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Вместимость:</td>
+																	<td class="search-apartments__d-cell">до 4х гостей</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Площадь:</td>
+																	<td class="search-apartments__d-cell">31 м2</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Вид из окна:</td>
+																	<td class="search-apartments__d-cell">на территорию комплекса / на лес</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Корпус:</td>
+																	<td class="search-apartments__d-cell"><span>№3</span></td>
+																</tr>
+															</table>
+														</div>
+														<div class="search-apartments__d-discount">
+															<p>В августе скидка на эти номера 30% при бронировании более чем на 10 дней</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="mix check3 search-apartments__item search-apartments__item-reserved">
+										<div class="container container__border container__border-reserved">
+											<div class="search-apartments__name">
+												<div class="search-apartments__name-w">
+													<ul class="sa__list">
+														<li class="sa__item sa__item_hidden" data-src="./assets/img/content/apartments-1.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-1.jpg" alt=""></a></li>
+														<li class="sa__item" data-src="./assets/img/content/apartments-2.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-2.jpg" alt=""></a></li>
+														<li class="sa__item sa__item_hidden" data-src="./assets/img/content/apartments-3.jpg"><a class="search-apartments__link" href="#"><img src="./assets/img/content/apartments-3.jpg" alt=""></a></li>
+													</ul>
+													<div class="search-apartments__content">
+														<div class="search-apartments__description"><a class="search-apartments__title" href="#">3 Люкс однокомнатный</a>
+															<div class="search-apartments__desc">Однокомнатный номер с двуспальной кроватью и диваном.</div>
+														</div>
+														<div class="search-apartments__price-wrap">
+															<div class="search-apartments__price">от 3 000 руб.</div>
+															<!-- new value-->
+															<!-- .search-apartments__price.search-apartments__price_strikeout
+															| от 6 200 руб.
+															
+															-->
+															<!-- .search-apartments__new-price
+															| 5 700 руб.
+															
+															-->
+														</div>
+														<div class="search-apartments__buttons">
+															<!-- a(href="#").search-apartments__button-book.sa__button-book-reserved
+															span Забронировать
+															
+															--><a class="sa__button-book-reserved" href="#"><span>Забронировано</span></a><a class="search-apartments__button-read-more" href="#"><span>Подробнее</span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="search-apartments__d">
+												<div class="search-apartments__d-w">
+													<div class="search-apartments__d-wrapper">
+														<div class="search-apartments__d-content">
+															<table class="search-apartments__d-table">
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Вместимость:</td>
+																	<td class="search-apartments__d-cell">до 4х гостей</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Площадь:</td>
+																	<td class="search-apartments__d-cell">31 м2</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Вид из окна:</td>
+																	<td class="search-apartments__d-cell">на территорию комплекса / на лес</td>
+																</tr>
+																<tr class="search-apartments__d-row">
+																	<td class="search-apartments__d-cell search-apartments__d-cell_t">Корпус:</td>
+																	<td class="search-apartments__d-cell"><span>№3</span></td>
+																</tr>
+															</table>
+														</div>
+														<div class="search-apartments__d-discount">
+															<p>В августе скидка на эти номера 30% при бронировании более чем на 10 дней</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</section>
+						</form>
+					</section>
+					<footer class="footer">
+						<div class="container">
+							<ul class="footer__title">
+								<li class="footer__title-item footer__year"><i class="fa fa-copyright" aria-hidden="true"></i>
+									<div class="footer__year-text">2016</div>
+								</li>
+								<li class="footer__title-item footer__title-text">«Баден-Баден Лесная сказка»</li>
+							</ul>
+							<ul class="footer__list">
+								<li class="footer__item"><a class="footer__link" href="#">Все услуги</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Акции</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Новинки</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Мероприятия</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Фото и видео</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Продажа аппартаментов</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+							</ul>
+							<ul class="footer__developer">
+								<li class="footer__developer-item footer__developer-text">Сайт создан:</li>
+								<li class="footer__developer-item footer__developer-logo">
+									<div class="footer__developer-svg">
+										<svg viewBox="0 0 454.76 121.12">
+											<g class="cls-1">
+												<path class="cls-1" d="M327.32,70H298.76v-9h28.56v9ZM47,71.62a17.35,17.35,0,0,1-1.54,7.45,15.18,15.18,0,0,1-4.63,5.67,20.82,20.82,0,0,1-7.33,3.48,37.06,37.06,0,0,1-9.6,1.13q-10,0-15.94-4T.26,73.21L0,72l1.25-.25,7.8-1.55,1.23-.24.27,1.22a13.65,13.65,0,0,0,1.65,4.3,9,9,0,0,0,2.7,2.81,12.54,12.54,0,0,0,3.93,1.67,21.92,21.92,0,0,0,5.27.58,22.76,22.76,0,0,0,5.59-.61,10.73,10.73,0,0,0,3.84-1.74,7.08,7.08,0,0,0,2.21-2.68,8.7,8.7,0,0,0,.74-3.72,8.56,8.56,0,0,0-.29-2.33,5.29,5.29,0,0,0-.82-1.72A8.68,8.68,0,0,0,34,66.22,9.91,9.91,0,0,0,32.19,65,20.89,20.89,0,0,0,30,64a23.66,23.66,0,0,0-2.52-.81l-2.88-.74-.79-.2h0l.79.2-.79-.2h0l-2-.51q-3.43-.88-5.81-1.66a34,34,0,0,1-4.1-1.59A21,21,0,0,1,9.1,56.92h0a14.34,14.34,0,0,1-2.22-1.86A13.51,13.51,0,0,1,5.2,52.94,13.35,13.35,0,0,1,4,50.52a14,14,0,0,1-.72-2.77A19.62,19.62,0,0,1,3,44.63a16.66,16.66,0,0,1,1.4-7,13.79,13.79,0,0,1,4.22-5.26,18.78,18.78,0,0,1,6.68-3.18,34,34,0,0,1,8.79-1,37.06,37.06,0,0,1,8.16.81,18.62,18.62,0,0,1,6.2,2.51,14.74,14.74,0,0,1,4.38,4.59,23.08,23.08,0,0,1,2.71,6.7l.33,1.32-1.34.23-7.91,1.38-1.21.21-.26-1.2A12.29,12.29,0,0,0,33.8,41a7.58,7.58,0,0,0-2.16-2.38,9.58,9.58,0,0,0-3.18-1.41,17.8,17.8,0,0,0-4.39-.49q-5.54,0-8.18,2a6.73,6.73,0,0,0-2.48,5.74,7.61,7.61,0,0,0,.23,2,4.41,4.41,0,0,0,.64,1.41,6.74,6.74,0,0,0,1.11,1.22,8.33,8.33,0,0,0,1.49,1A16.35,16.35,0,0,0,18.8,51a22.82,22.82,0,0,0,2.27.73l2.63.7,2.81.72q2.83.72,5.08,1.38t3.5,1.15q1.32.51,2.53,1.1h0A23.71,23.71,0,0,1,39.89,58a15.93,15.93,0,0,1,2,1.49,15.49,15.49,0,0,1,1.73,1.78A13.89,13.89,0,0,1,45,63.35a15.14,15.14,0,0,1,1.07,2.37,14.94,14.94,0,0,1,.67,2.77A21.23,21.23,0,0,1,47,71.62ZM81.15,38.15V88.48H70.59V38.15H51.91V29H99.83v9.11H81.15Zm142.3,49.74-15-23.67h-8.06V88.48H189.75V29h21.58a34.31,34.31,0,0,1,9,1.06,18.68,18.68,0,0,1,6.77,3.29,14.11,14.11,0,0,1,4.24,5.43,17.69,17.69,0,0,1,1.4,7.22,17.67,17.67,0,0,1-1.07,6.22,15.9,15.9,0,0,1-3.21,5.21,17.46,17.46,0,0,1-5,3.78A20.5,20.5,0,0,1,219,62.89L234.86,86.5l1.33,2H223.83l-.38-.59Zm-1.38-41.72a7,7,0,0,0-2.68-6q-2.86-2.1-8.85-2.1H200.34V55.28h10.52c3.71,0,6.53-.8,8.44-2.39a7.21,7.21,0,0,0,2.06-2.78,10.15,10.15,0,0,0,.7-3.94Zm45.92-8V88.48H257.42V38.15H238.75V29h47.91v9.11H268ZM137.09,91.49s-4.39,1.52-4.39,10.74,8.91,18.89,8.91,18.89,8.91-9.67,8.91-18.89-4.39-10.74-4.39-10.74c4.11,7-4.52,16.69-4.52,16.69S133,98.5,137.09,91.49ZM100.19,100,141.39,0l41.2,100-41.2-17.16L100.19,100Zm41.2-61.38L127.33,72.77l14.06-5.85,14.06,5.85L141.39,38.64ZM425.1,50.19a8.59,8.59,0,1,1-8.59,8.59,8.59,8.59,0,0,1,8.59-8.59Zm0-21.08a29.67,29.67,0,0,0-29.67,29.67c0,.44,0,.88,0,1.31H370.84v9h18.31a20.59,20.59,0,1,1-1-22.25l6.93-5.9a29.66,29.66,0,1,0,3.13,30.37A29.67,29.67,0,1,0,425.1,29.12Zm0,9.07a20.59,20.59,0,1,0,20.59,20.59A20.59,20.59,0,0,0,425.1,38.19Z"></path>
+											</g>
+										</svg>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./js/search-vendor.js"></script>
+	<script src="./js/search-scripts.min.js"></script>
+</html>

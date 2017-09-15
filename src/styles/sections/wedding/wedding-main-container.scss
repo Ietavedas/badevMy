@@ -1,0 +1,110 @@
+.wedding-wrap{
+	margin-top: 150px;
+	margin-bottom: 150px;
+	&__title{
+		font-family: open_sansextrabold;
+		font-size: 40px;
+		margin-top: 0;
+	}
+
+	&__block{
+		max-width: 1260px;
+		font-size: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		// align-content: center;
+		margin: 0 auto;
+
+		&--reverse{
+			flex-direction: row-reverse;
+
+			.wedding-wrap__img-wrap{
+				// margin-right: 0;
+				margin-left: 0;
+				img{
+					transform: translate(-10px);
+				}
+			}
+		}
+	}
+
+	&__left{
+		// display: inline-block;
+		width: 45%;
+		// margin-right: 5%;
+
+		&--vertical{
+			width: 55%;
+		}
+	}
+
+	&__right{
+		// display: inline-block;
+	}
+
+	&__size-wrap{
+		position: relative;
+	}
+
+	&__size{
+		font-family: open_sanssemibold;
+		font-size: 15px;
+		color: #62b3d9;
+		margin-left: 39px;
+
+		&:before{
+			content: "";
+			background: url(../assets/img/icons/man.png);
+			width: 20px;
+			height: 23px;
+			position: absolute;
+			left: 0;
+		}
+	}
+
+	&__text{
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.6;
+		margin-bottom: 60px;
+		margin-top: 30px;
+	}
+
+	&__img-wrap{
+		margin-right: 5%;
+		margin-left: 3%;
+		// box-shadow: 1px 1px 15px -4px #000000;
+		padding-bottom: 10px;
+		background-color: #fff;
+		// max-height: 365px;
+		max-width: 576px;
+		width: 100%;
+		// position: relative;
+		// display: flex;
+		// align-items: flex-end;
+		// position: relative;
+
+		img{
+			width: 100%;
+			// margin-left: -10px;
+			// margin-top: -10px;
+			
+			// position: absolute;
+			// bottom: 0;
+			// right: 0;
+		}
+	}
+
+	.button{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.wd-container{
+	max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}

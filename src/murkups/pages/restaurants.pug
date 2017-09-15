@@ -1,0 +1,33 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content="IE=edge,chrome=1")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title
+            | restaurants
+
+        link(href="./styles/restaurants-build.css" rel="stylesheet")
+
+    body
+        .wrapper
+            include ../main-common/header
+
+            .maincontent
+
+                //- include ../rs-common/rs-top-logo
+
+                include ../rs-common/rs-slidertop
+
+                include ../rs-common/rs-main-container
+
+                include ../main-common/footer
+
+                .rest-overlay
+                .rest-overlay.rest-overlay--mid
+                .rest-overlay.rest-overlay--bottom
+
+        // block footer
+
+    script(src="./js/restaurants-vendor.js")
+    script(src="./js/restaurants-scripts.min.js")

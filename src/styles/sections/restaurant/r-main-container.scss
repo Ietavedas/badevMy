@@ -1,0 +1,7 @@
+.r-main-container {
+    margin-left: 383px;
+
+    @include w1460px {
+        margin-left: 338px;
+    }
+}

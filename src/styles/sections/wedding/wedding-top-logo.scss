@@ -1,0 +1,41 @@
+.rs-top-logo {
+    background: url('../assets/img/bg/rs-top-logo.jpg') 0 0 no-repeat;
+    min-height: 555px;
+    background-size: cover;
+}
+
+.rs-logo__bcrumbs {
+    margin-top: 50px;
+}
+
+.rs-logo__bcrumbs-list {
+    @extend %clearfix;
+}
+
+.rs-logo__bcrumbs-item {
+    @include inlineblock(middle);
+}
+
+.rs-logo__bcrumbs-item-i {
+    width: 5px;
+
+    .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+    }
+}
+
+.rs-logo__bcrumbs-link {
+    @include inlineblock(middle);
+    color: $white;
+    font-size: 15px;
+    text-decoration: none;
+    transition: .3s;
+
+    &:hover {
+        color: #68daff;
+    }
+}

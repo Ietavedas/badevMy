@@ -1,0 +1,12 @@
+.room-main-container {
+    margin-left: 383px;
+
+    @include w1460px {
+        margin-left: 338px;
+    }
+}
+
+.main-rooms__link {
+    display: block;
+    text-decoration: none;
+}

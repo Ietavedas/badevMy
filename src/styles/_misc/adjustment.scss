@@ -1,0 +1,203 @@
+html {
+    font-size: 16px;
+
+    @include desktop {
+        // font-size: 16px;
+    }
+
+    @include laptop {
+        // font-size: 16px;
+    }
+
+    @include tablets {
+        // font-size: 14px;
+    }
+
+    @include phones {
+        // font-size: 13px;
+    }
+}
+
+body {
+    @include open_sans();
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.42;
+    background: $white;
+    color: $black;
+
+    // opacity: 1;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+
+    // overflow: hidden;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    // overflow: hidden;
+    position: relative;
+    // min-width: $container-width + 20px;
+    // min-width: 1200px;
+}
+
+.inner{
+    max-width: 1560px;
+    // max-width: 1460px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.outer{
+    width: 100%;
+    background-color: rgba(217, 216, 216, 0.2);
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.button-wrap{
+    text-align: center;
+}
+
+.button{
+    color: #fff;
+    font-weight: 600;
+    background-color: #4caad5;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+    border-bottom: 2px solid #2f95c4;
+
+    &:hover{
+        background-color: #2f95c4;
+        transition: all 0.5s ease;
+    }
+
+    &--big{
+        padding: 15px 28px;
+    }
+
+    &--mid{
+        padding: 10px 35px;
+    }
+
+    &--small{
+        padding: 8px 15px;
+    }
+}
+
+/* .wrapper:after {
+    content: "";
+    display: block;
+    height: $footer-height;
+    overflow: hidden;
+}*/
+
+.maincontent {
+    position: relative;
+
+    @extend %clearfix;
+
+    // margin-top: 101px;
+    margin-top: 95px;
+    overflow: hidden;
+
+    @include w1620px {
+        margin-top: 137px;
+    }
+}
+
+.footer {
+    // background: $footer_color;
+    // height: $footer-height;
+    // width: 100%;
+    // margin-top: -$footer-height;
+    // position: relative;
+    // min-width: $container-width + 20px;
+    // min-width: 1200px;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+}
+
+.title-wrap{
+    position: relative;
+    margin-top: 60px;
+    // overflow: hidden;
+
+    &:before{
+        content: url(../assets/img/content/letter-d-gallery.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        // bottom: 5px;
+        bottom: -30px;
+        left: -21px;
+        z-index: -1;
+    }
+
+    &--w{
+        &:before{
+            content: url(../images/letter-d.png);
+            bottom: -10px;
+            left: -15px;
+            width: 75px;
+            z-index: 0;
+        }
+
+        h2{
+            font-size: 65px !important;
+            color: #fff;
+        }
+    }
+
+    h2{
+        font-size: 40px;
+        font-family: open_sansextrabold;
+        margin: 0;
+    }
+
+    span{
+        font-size: 80px;
+    }
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    // margin-top: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+a {
+    outline: 0 none;
+}

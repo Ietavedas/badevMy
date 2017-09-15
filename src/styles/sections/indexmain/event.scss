@@ -1,0 +1,65 @@
+.event-wrap{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	&:after{
+		content: url(../assets/img/bg/bg-fon1.png);
+		width: 962px;
+		height: 1565px;
+		position: absolute;
+		top: 0;
+		right: -300px;
+		z-index: -2;
+		// transform: scale(-1, 1);
+	}
+
+	&:before{
+		content: url(../assets/img/bg/bg-fon1.png);
+		width: 962px;
+		height: 1565px;
+		position: absolute;
+		bottom: 0;
+		left: -100px;
+		z-index: -2;
+		transform: scale(-1, 1);
+	}
+}
+
+.event{
+	z-index: 1;
+	max-width: 366px;
+	margin-left: 33px;
+	margin-right: 33px;
+
+	&__date{
+		font-family: open_sanssemibold;
+		font-size: 14px;
+		color: #62b3d9;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	&__title{
+		font-size: 25px;
+		font-family: open_sansextrabold;
+		color: #000;
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	&__desc{
+		font-size: 15px;
+		font-family: open_sansregular;
+		color: #000;
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.button{
+		margin: 0;
+	}
+}

@@ -1,0 +1,82 @@
+.slidertop{
+	// clear: both;
+	// padding: 0 60px;
+    outline: 0;
+    text-align: center;
+	&__block{
+		// background: url(../images/child.jpg) 0 0 no-repeat;
+		background-size: cover !important;
+		width: 100%;
+		height: 500px;
+	}
+
+	&__breadcrumbs{
+		padding-top: 50px;
+		text-align: center;
+	}
+
+	&__bd-arrow{
+		width: 5px;
+		height: 8px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	&__main{
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	&__bd-text{
+	    display: inline-block;
+	    vertical-align: top;
+	    color: #fff;
+	    text-decoration: none;
+	    margin-left: 19px;
+	}
+
+	.cls-1{
+		fill: none;
+		stroke: #62b3d9;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		// stroke-width: 2px;
+	}
+
+	&__wrapper{
+		// position: absolute;
+	 //    top: 50%;
+	 //    left: 50%;
+	 //    width: 100%;
+	 //    -webkit-transform: translate(-50%,-50%);
+	 //    transform: translate(-50%,-50%);
+	 //    text-align: center;
+	}
+
+	&__title{
+		font-family: open_sansextrabold;
+		color: #fff;
+	    font-size: 65px;
+	    z-index: 2;
+	}
+
+	&__text{
+		color: #fff;
+    	margin-top: 24px;
+	}
+}
+
+.hs-slidertop__wave-b {
+    width: 22%;
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: top;
+
+    .cls-1 {
+        fill: none;
+        stroke: #62b3d9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+}

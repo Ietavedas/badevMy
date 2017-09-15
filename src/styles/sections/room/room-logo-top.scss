@@ -1,0 +1,132 @@
+.room-logo-top {
+    background: url('../assets/img/bg/r-logo-top.jpg') 0 0 no-repeat;
+    background-size: cover;
+    min-height: 555px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+    color: #fff;
+
+    .container {
+        max-width: 1100px;
+    }
+}
+
+.room-logo__title {
+    @include open_sans(extrabold);
+    @include inlineblock();
+    color: $white;
+    font-size: 65px;
+    margin-top: 80px;
+    position: relative;
+
+    @include w1460px {
+        .room-logo__word {
+            display: block;
+        }
+    }
+}
+
+.room-logo__word-t {
+    position: relative;
+
+    &:before {
+        content: url('../assets/img/content/hs-waterfun-d.png');
+        background-repeat: no-repeat;
+        position: absolute;
+
+        top: -42px;
+        left: -27px;
+
+        z-index: -1;
+
+        /* @include w1460px {
+            content: url('../assets/img/content/hs-waterfun-d.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -42px;
+            left: 20px;
+            z-index: -1;
+        } */
+    }
+}
+
+.room-logo__text {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 40px;
+    line-height: 1.8;
+}
+
+.room-logo__wave {
+    width: 281px;
+    @include inlineblock();
+    margin-top: 40px;
+
+    .cls-1 {
+        fill: none;
+        stroke: #78c6eb;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+}
+
+.room-logo__svg-icons {
+    max-width: 1225px;
+    margin: 40px auto 0 auto;
+}
+
+.room-logo__svgi-list {
+    @extend %clearfix;
+}
+
+.room-logo__svgi-item {
+    @include inlineblock(middle);
+    @extend %clearfix;
+
+}
+
+.room-logo__svgi-item_window {
+    width: 49%;
+
+    .room-logo__svgi-i {
+
+    }
+}
+
+.room-logo__svgi-item_area {
+    width: 25%;
+}
+
+.room-logo__svgi-item_house {
+    width: 25%;
+}
+
+.room-logo__svgi-i {
+    width: 61px;
+    @include inlineblock(middle);
+
+    .cls-1 {
+        fill: none;
+        stroke: #78c6eb;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+    }
+}
+
+.room-logo__svgi-text {
+    @include inlineblock(middle);
+    @include open_sans(semibold);
+    color: #b1def5;
+    font-size: 15px;
+    width: 50%;
+    text-align: left;
+    margin: 0 0 0 10px;
+}
+
+.room-logo__svgi-item_br {
+    border-right: 1px solid #5384a0;
+}

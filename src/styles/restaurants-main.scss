@@ -1,0 +1,58 @@
+@import "../assets/img/sprites/sprite";
+
+// adjustment variables
+$container-width: 1300px;
+$footer-height: 526px;
+$footer_color: #6d6e71;
+// $body-font : 'fira_sansregular', Helvetica, serif;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$grey: #f9f9f9;
+$darkgrey: #dddddd;
+$lightgrey: #e8e8e8;
+$blue: #06628d;
+$lightblue: #62b3d9;
+$darkblue: #06628d;
+$green: #6fb942;
+
+// layout
+@import "_misc/fonts";
+@import "_misc/mixins";
+@import "_misc/adjustment";
+@import "_misc/normalize";
+@import "_misc/font-awesome";
+
+// plugins
+@import "plugins/lightgallery/lightgallery";
+@import "plugins/lightgallery/lg-transitions";
+
+@import "plugins/slick/slick";
+@import "plugins/slick/slick-theme";
+
+@import "plugins/jquery-ui/jquery-ui.scss";
+
+// @import "plugins/jquery-ui-datepicker/jquery-ui.structure.min.scss";
+// @import "plugins/jquery-ui-datepicker/jquery-ui.scss";
+
+// @import "plugins/jquery-ui-spinner/spinner.scss";
+
+@import "plugins/font-awesome";
+
+// styles
+@import "sections/header";
+
+@import "sections/overlay";
+
+@import "sections/gallery";
+
+@import "sections/reviews";
+
+@import "sections/advertising";
+
+@import "sections/restaurants/rs-slidertop";
+@import "sections/restaurants/rs-main-container";
+@import "sections/restaurants/rest-overlay";
+
+@import "sections/footer";

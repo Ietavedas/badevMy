@@ -1,0 +1,133 @@
+.room-price {
+    margin-top: 20px;
+    font-size: 17px;
+    padding: 10px;
+
+    .container {
+        max-width: 1192px;
+    }
+}
+
+.room-price__wrap {
+    border: 2px solid $lightblue;
+}
+
+.room-price__heading {
+    padding: 65px 60px 0 80px;
+}
+
+.room-price__table-block {
+    margin-top: 20px;
+}
+
+.room-price__table {
+    width: 100%;
+}
+
+.room-price__heading {
+    @include open_sans(extrabold);
+    font-size: 40px;
+}
+
+.room-price__cell {
+    padding: 10px 80px;
+}
+
+.room-price__cell_bg {
+    background: #fafafa;
+}
+
+.room-price__cell_borderTop {
+    border-top: 1px solid #e6e6e6;
+}
+
+.room-price__cell_borderBottom {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.room-price__cell_borderRight {
+    border-right: 1px solid #e6e6e6;
+}
+
+.room-price__cell_left {
+    width: 80%;
+}
+
+.room-price__cell_right {
+    width: 20%;
+    text-align: center;
+}
+
+.room-price__cell_p {
+    padding: 10px 80px 50px 80px;
+}
+
+.room-price__text_grey {
+    color: #7c7c7c;
+}
+
+.room-price__button {
+    width: 195px;
+    display: block;
+    text-decoration: none;
+    @include open_sans(semibold);
+    font-size: 16px;
+    padding: 10px 0;
+    color: $white;
+    background-image: linear-gradient( 0deg, rgb(49,159,210) 0%, rgb(98,179,217) 100%);
+    box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    margin-top: 38px;
+
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient( 0deg, rgb(11,106,151) 0%, rgb(57,156,202) 100%);
+        opacity: 0;
+        transition: opacity .2s linear;
+    }
+
+    &:hover {
+        opacity: 1;
+
+        &:after {
+            content: '';
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.room-price__man {
+    width: 17px;
+    @include inlineblock(middle);
+    margin-top: 5px;
+
+    .cls-1,.cls-2 {
+        fill:none;
+        stroke:#2687b3;
+    }
+    .cls-1 {
+        stroke-linejoin:round;
+    }
+    .cls-2 {
+        stroke-miterlimit:10;
+    }
+}
+
+.room-price__text_guests {
+    @include inlineblock(middle);
+    margin-left: 10px;
+}

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>room</title>
+		<link href="./styles/room-build.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="overlay"></div>
+			<div class="header-wrap">
+				<header class="header">
+					<div class="navigation">
+						<div class="navigation__arrow"></div>
+						<div class="navigation__wrap">
+							<div class="navigation__logo"><img src="./assets/img/content/main-logo.png" alt=""></div>
+							<div class="navigation-block">
+								<div class="navigation-block__legend"><span class="navigation-block__top">комплекс</span><span class="navigation-block__bottom">Thermal</span></div>
+								<ul class="navigation__items">
+									<li class="navigation__item"><a class="navigation__link" href="#">Горячий источник</a></li>
+									<li class="navigation__item"><a class="navigation__link" href="#">Закрытый бассейн</a></li>
+									<li class="navigation__item"><a class="navigation__link" href="#">Комплекс саун</a></li>
+									<li class="navigation__item"><a class="navigation__link" href="#">Детям</a></li>
+									<li class="navigation__item"><a class="navigation__link" href="#">Spa и фитнес</a></li>
+									<li class="navigation__item"><a class="navigation__link" href="#">Кафе</a></li>
+								</ul>
+								<div class="navigation-block__price">
+									 от <span>220</span>руб.</div>
+							</div>
+							<ul class="navigation__items navigation__items--line-wrap js-navigation__items">
+								<li class="navigation__item navigation__item--line" data-block="rest"><a class="navigation__link" href="#">Рестораны</a></li>
+								<li class="navigation__item navigation__item--line" data-block="num"><a class="navigation__link" href="#">Номера</a></li>
+								<li class="navigation__item navigation__item--line" data-block="sw"><a class="navigation__link" href="#">Свадьбы и банкеты</a></li>
+								<li class="navigation__item navigation__item--line" data-block="recr"><a class="navigation__link" href="#">Отдых</a></li>
+								<li class="navigation__item navigation__item--line" data-block="tour"><a class="navigation__link" href="#">Автобусный тур</a></li>
+							</ul><a class="btn-nav btn-nav--ticket" href="#">Купить билет</a><a class="btn-nav btn-nav--room" href="#">Найти номер</a><a class="header__phone" href="tel:+7 351 200 3333">+7 351 200 3333</a>
+						</div>
+						<div class="menu-hover">
+							<div class="menu-hover__inner" data-block="rest"><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">De Luxe</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Полулюкс</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Стандарт +</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Стандарт</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Эконом</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Коттедж в аренду с сауной (10 человек)</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a></div>
+							<div class="menu-hover__inner" data-block="num"><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">De Luxe</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Полулюкс</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Стандарт +</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Стандарт</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a></div>
+							<div class="menu-hover__inner" data-block="sw"><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">De Luxe</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Полулюкс</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Стандарт +</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a></div>
+							<div class="menu-hover__inner" data-block="recr"><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">De Luxe</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Полулюкс</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a></div>
+							<div class="menu-hover__inner" data-block="tour"><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">De Luxe</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a><a class="item" href="#">
+									<div class="item__img-wrap"><img class="item__img" src="./assets/img/content/item1.jpg"></div>
+									<div class="item__block">
+										<div class="item__name-wrap"><span class="item__name">Люкс двухкомнатный</span></div><span class="item__price">
+											 от 2 500 руб.</span>
+									</div></a></div>
+						</div>
+					</div>
+					<div class="header__services"><img class="logo-fix" src="./assets/img/content/ht-logo.png">
+						<div class="hamburger">
+							<div class="burger-menu burger-menu--closed">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div><span class="hamburger-label">Все услуги</span>
+						</div>
+					</div>
+					<nav class="nav">
+						<ul class="nav__items">
+							<li class="nav__item"> <a href="#">Акции</a></li>
+							<li class="nav__item"><a href="#">Новинки</a></li>
+							<li class="nav__item"><a href="#">Мероприятия</a></li>
+							<li class="nav__item"><a href="#">Фото и видео</a></li>
+							<li class="nav__item"><a href="#">Продажа аппартаментов</a></li>
+							<li class="nav__item"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__contact"><a class="header__phone" href="tel:+7 351 200 3333">+7 351 200 3333
+							<svg viewBox="0 0 15.95 15.95">
+								<g>
+									<path class="cls-1" d="M4.3,5.73a1.85,1.85,0,0,0,2.39,0,1.78,1.78,0,0,0-.23-2.48l-2-2A2.08,2.08,0,0,0,1.55,1L1,1.48A1.8,1.8,0,0,0,.5,2.81a13,13,0,0,0,4,8.69,13,13,0,0,0,8.69,4,1.8,1.8,0,0,0,1.32-.53l.51-.51a2.08,2.08,0,0,0-.27-2.9l-2-2a1.78,1.78,0,0,0-2.48-.23,1.85,1.85,0,0,0,0,2.39"></path>
+								</g>
+							</svg></a><a class="header__sodial header__sodial--vk" href="">
+							<svg viewBox="0 0 18 14">
+								<g>
+									<polyline class="cls-1" points="0.5 0.5 10.5 13.5 10.5 0.5 8.5 0.5"></polyline>
+									<polyline class="cls-1" points="17.5 0.5 10.5 7.5 17.5 13.5"></polyline>
+								</g>
+							</svg></a><a class="header__sodial header__sodial--inst" href="">
+							<svg viewBox="0 0 17 17">
+								<g>
+									<rect class="cls-1" x="0.5" y="0.5" width="16" height="16"></rect>
+									<circle class="cls-1" cx="8.5" cy="8.5" r="3.08"></circle>
+									<circle class="cls-1" cx="13.42" cy="3.58" r="0.62"></circle>
+								</g>
+							</svg></a></div><a class="header__phone-link" href=""><img src="./assets/img/icons/ht-phone.png" alt=""></a>
+				</header>
+				<div class="header-laptop">
+					<nav class="nav">
+						<ul class="nav__items">
+							<li class="nav__item nav__item--all"><a href="">Все услуги</a></li>
+							<li class="nav__item"><a href="">Акции</a></li>
+							<li class="nav__item"><a href="">Новинки</a></li>
+							<li class="nav__item"><a href="">Мероприятия</a></li>
+							<li class="nav__item"><a href="">Фото и видео</a></li>
+							<li class="nav__item"><a href="">Продажа аппартаментов</a></li>
+							<li class="nav__item"><a href="">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__contact"><a class="header__phone-link" href="tel:+7 351 200 3333">+7 351 200 3333</a><a class="header__sodial header__sodial--vk" href="#"></a><a class="header__sodial header__sodial--inst" href="#"></a></div>
+				</div>
+			</div>
+			<div class="maincontent">
+				<!-- include ../main-common/overlay-->
+				<!-- include ../main-common/main-rooms-->
+				<!-- include ../main-common/main-menu-->
+				<section class="room-sidebar">
+					<div class="room-sidebar__title">
+						<div class="room-sb__title-text_t">комплекс</div>
+						<div class="room-sb__title-text_b">Апартаментов</div>
+					</div>
+					<ul class="room-sb__list">
+						<li class="room-sb__item"><a class="room-sb__link" href="#">Luxe</a></li>
+						<li class="room-sb__item"><a class="room-sb__link room-sb__link_lh" href="#">Эконом стандарт двухместный</a></li>
+						<!-- li.room-sb__item
+						a(href="#").room-sb__link
+						    | Люкс двухкомнатный
+						
+						-->
+						<li class="room-sb__item"><a class="room-sb__link" href="#">Люкс однокомнатный</a></li>
+						<li class="room-sb__item"><a class="room-sb__link" href="#">Полулюкс</a></li>
+						<li class="room-sb__item"><a class="room-sb__link" href="#">Стандарт</a></li>
+						<li class="room-sb__item"><a class="room-sb__link" href="#">Эконом</a></li>
+						<li class="room-sb__item"><a class="room-sb__link" href="#">Коттедж с сауной</a></li>
+						<li class="room-sb__item"><a class="room-sb__link" href="#">Коттедж с мангальной зоной</a></li>
+					</ul>
+					<div class="room-sb__button-wrap"><a class="room-sb__button room-sb__button_ticket" href="#">
+							<div class="room-sb__button-i r-sb__button-i_ladder">
+								<svg viewBox="0 0 33.71 34.53">
+									<path class="cls-1" d="M12.08,21.62v-17A4.09,4.09,0,0,0,8,.5H8A4.09,4.09,0,0,0,3.91,4.59"></path>
+									<path class="cls-1" d="M26.39,21.62v-17A4.09,4.09,0,0,0,22.3.5h0a4.09,4.09,0,0,0-4.09,4.09"></path>
+									<line class="cls-1" x1="25.71" y1="18.56" x2="12.08" y2="18.56"></line>
+									<line class="cls-1" x1="25.71" y1="11.74" x2="12.08" y2="11.74"></line>
+									<path class="cls-1" d="M.5,23,4,24.76a10.36,10.36,0,0,0,9.27,0L16.85,23l3.54,1.77a10.36,10.36,0,0,0,9.27,0L33.21,23"></path>
+									<path class="cls-1" d="M.5,31.16,4,32.93a10.36,10.36,0,0,0,9.27,0l3.54-1.77,3.54,1.77a10.36,10.36,0,0,0,9.27,0l3.54-1.77"></path>
+								</svg>
+							</div>
+							<div class="room-sb__button-text">Купить билет</div></a><a class="room-sb__button" href="#">
+							<div class="room-sb__button-i r-sb__button-i_bed">
+								<svg viewBox="0 0 36.67 25.48">
+									<g>
+										<path class="cls-1" d="M.5,14.87V25h3a1.9,1.9,0,0,0,1.9-1.9v-.9H31.28v.9a1.9,1.9,0,0,0,1.9,1.9h3V14.87a5.28,5.28,0,0,0-5.28-5.28H5.78A5.28,5.28,0,0,0,.5,14.87Z"></path>
+										<line class="cls-1" x1="3.3" y1="13.79" x2="33.37" y2="13.79"></line>
+										<path class="cls-1" d="M3.65,7.49v-3A4,4,0,0,1,7.6.5H29.08A4,4,0,0,1,33,4.45v3"></path>
+										<path class="cls-1" d="M10.21,5.4h4a2.19,2.19,0,0,1,2.19,2.19v2a0,0,0,0,1,0,0H8a0,0,0,0,1,0,0v-2A2.19,2.19,0,0,1,10.21,5.4Z"></path>
+										<path class="cls-1" d="M22.75,5.4h4.11A2.14,2.14,0,0,1,29,7.54V9.59a0,0,0,0,1,0,0H20.61a0,0,0,0,1,0,0V7.54A2.14,2.14,0,0,1,22.75,5.4Z"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="room-sb__button-text">Найти номер</div></a><a class="room-sb__button_phone" href="№">
+							<div class="room-sb__button-i_phone">
+								<svg viewBox="0 0 15.95 15.95">
+									<path class="cls-1" d="M4.3,5.73a1.85,1.85,0,0,0,2.39,0,1.78,1.78,0,0,0-.23-2.48l-2-2A2.08,2.08,0,0,0,1.55,1L1,1.48A1.8,1.8,0,0,0,.5,2.81a13,13,0,0,0,4,8.69,13,13,0,0,0,8.69,4,1.8,1.8,0,0,0,1.32-.53l.51-.51a2.08,2.08,0,0,0-.27-2.9l-2-2a1.78,1.78,0,0,0-2.48-.23,1.85,1.85,0,0,0,0,2.39"></path>
+								</svg>
+							</div>
+							<div class="room-sb__button-text_phone">+7 351 200 3333</div></a></div>
+				</section>
+				<div class="room-main-container">
+					<section class="room-logo-top">
+						<div class="container">
+							<!-- .room-logo__title
+							span.room-logo__word-t Luxe
+							span.room-logo__word  Thernal
+							
+							-->
+							<div class="room-logo__title">
+								<!-- span.room-logo__word-t Э-->
+								<!-- | коном стандарт двухместный-->
+								<!-- span.room-logo__word-t К-->
+								<!-- | оттедж с сауной--><span class="room-logo__word-t">
+									Luxe</span>
+							</div>
+							<div class="room-logo__text">
+								<p>Мы предлагаем к проживанию удобные номера с современной отделкой. Всего на территории</p>
+								<p>комплекса имеется 3 корпуса с номерами разной степени комфортности.</p>
+							</div>
+							<div class="room-logo__wave">
+								<svg viewBox="0 0 281 13.74">
+									<path class="cls-1" d="M.5,10.08,11.75,3.65a23.94,23.94,0,0,1,23.75,0l11.25,6.43a23.94,23.94,0,0,0,23.75,0L81.75,3.65a23.94,23.94,0,0,1,23.75,0l11.25,6.43a23.94,23.94,0,0,0,23.75,0l11.25-6.43a23.94,23.94,0,0,1,23.75,0l11.25,6.43a23.94,23.94,0,0,0,23.75,0l11.25-6.43a23.94,23.94,0,0,1,23.75,0l11.25,6.43a23.94,23.94,0,0,0,23.75,0"></path>
+								</svg>
+							</div>
+						</div>
+						<div class="room-logo__svg-icons">
+							<ul class="room-logo__svgi-list">
+								<li class="room-logo__svgi-item room-logo__svgi-item_window room-logo__svgi-item_br">
+									<div class="room-logo__svgi-i">
+										<svg viewBox="0 0 61.06 54.96">
+											<g>
+												<path class="cls-1" d="M37.29,44.3V17.48A16.53,16.53,0,0,0,20.81,1h0A16.53,16.53,0,0,0,4.32,17.48V44.3"></path>
+												<path class="cls-1" d="M34.15,44.3V18.47A13.39,13.39,0,0,0,20.81,5.12h0A13.39,13.39,0,0,0,7.46,18.47V44.3"></path>
+												<path class="cls-1" d="M27.16,18.28V15.66A6.37,6.37,0,0,0,20.81,9.3h0a6.37,6.37,0,0,0-6.35,6.35v2.62"></path>
+												<rect class="cls-1" y="44.3" width="39.61" height="4.67" rx="2.24" ry="2.24"></rect>
+												<line class="cls-1" x1="20.81" y1="5.12" x2="20.81" y2="44.3"></line>
+												<line class="cls-1" x1="34.15" y1="21.6" x2="29.45" y2="26.31"></line>
+												<line class="cls-1" x1="12.16" y1="21.6" x2="7.46" y2="26.31"></line>
+												<line class="cls-1" x1="16.87" y1="39.59" x2="12.16" y2="44.3"></line>
+												<line class="cls-1" x1="30.48" y1="31.28" x2="25.77" y2="35.98"></line>
+												<line class="cls-1" x1="7.46" y1="31.28" x2="34.15" y2="31.28"></line>
+												<line class="cls-1" x1="7.46" y1="18.28" x2="34.15" y2="18.28"></line>
+											</g>
+										</svg>
+									</div>
+									<div class="room-logo__svgi-text">
+										<div>Вид из окна:</div>
+										<div>на территорию комплекса</div>
+									</div>
+								</li>
+								<li class="room-logo__svgi-item room-logo__svgi-item_area room-logo__svgi-item_br">
+									<div class="room-logo__svgi-i">
+										<svg viewBox="0 0 51.98 43.73">
+											<g>
+												<rect class="cls-1" x="1" y="1" width="10.73" height="10.73"></rect>
+												<rect class="cls-1" x="40.25" y="1" width="10.73" height="10.73"></rect>
+												<rect class="cls-1" x="1" y="32" width="10.73" height="10.73"></rect>
+												<rect class="cls-1" x="40.25" y="32" width="10.73" height="10.73"></rect>
+												<line class="cls-1" x1="6.37" y1="11.73" x2="6.37" y2="32"></line>
+												<line class="cls-1" x1="45.62" y1="11.73" x2="45.62" y2="32"></line>
+												<line class="cls-1" x1="40.25" y1="6.37" x2="11.73" y2="6.37"></line>
+												<line class="cls-1" x1="40.25" y1="37.37" x2="11.73" y2="37.37"></line>
+												<path class="cls-1" d="M29.18,17.91s.2-3-3.46-3c-2.51,0-3.94,1.53-3.94,4.31,0,.86.15,3.4,4.7,3.4,5.75,0,5.07,7.06-.45,7.06-5.1,0-5-3.46-5-3.46"></path>
+											</g>
+										</svg>
+									</div>
+									<div class="room-logo__svgi-text">
+										<div>Площадь:</div>
+										<div>от 50 м2</div>
+									</div>
+								</li>
+								<li class="room-logo__svgi-item room-logo__svgi-item_house">
+									<div class="room-logo__svgi-i">
+										<svg viewBox="0 0 54.54 44.78">
+											<g class="cls-1">
+												<rect x="1" y="12" width="49.54" height="31.78"></rect>
+												<polygon points="10 1 43.54 1 53.54 12 20 12 10 1"></polygon>
+												<polygon points="10 1 1 12 20 12 10 1"></polygon>
+												<line x1="20" y1="12" x2="20" y2="43.78"></line>
+												<line x1="1" y1="24.59" x2="50.54" y2="24.59"></line>
+												<line x1="1" y1="28.59" x2="50.54" y2="28.59"></line>
+												<rect x="5.67" y="15.45" width="10.05" height="6.09"></rect>
+												<rect x="23.67" y="15.45" width="10.05" height="6.09"></rect>
+												<rect x="36.67" y="15.45" width="10.05" height="6.09"></rect>
+												<polyline points="5.67 43.78 5.67 33.45 15.72 33.45 15.72 43.78"></polyline>
+												<rect x="23.67" y="33.45" width="10.05" height="6.09"></rect>
+												<rect x="36.67" y="33.45" width="10.05" height="6.09"></rect>
+											</g>
+										</svg>
+									</div>
+									<div class="room-logo__svgi-text">
+										<div>Корпус:</div>
+										<div>Thermal</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="room-gallery">
+						<div class="container">
+							<div class="room-gallery__slider">
+								<ul class="room-gallery__slider-w room-gallery__lightgallery">
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-1.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-1.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-2.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-2.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-1.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-3.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-1.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-1.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-2.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-2.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-1.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-3.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-1.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-1.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-2.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-2.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-1.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-3.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-1.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-1.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-2.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-2.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-1.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-3.jpg" alt=""></a></li>
+									<li class="room-gallery__item" data-src="./assets/img/content/hs-gallery-1.jpg"><a class="room-gallery__link" href="#"><img src="./assets/img/content/r-gallery-1.jpg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section class="room-price">
+						<div class="container">
+							<div class="room-price__wrap">
+								<div class="room-price__heading">Прайс</div>
+								<div class="room-price__table-block">
+									<table class="room-price__table">
+										<tr class="room-price__row">
+											<td class="room-price__cell room-price__cell_left room-price__cell_p">
+												<div class="room-price__text">Стоимость с 8 июня по 30 сентября 2017 г.</div>
+											</td>
+											<td class="room-price__cell room-price__cell_right room-price__cell_p">
+												<div class="room-price__man">
+													<svg viewBox="0 0 19 21">
+														<g>
+															<path class="cls-1" d="M5.5,12.5s-5,2-5,3c0,2.71,2,5,9,5"></path>
+															<path class="cls-1" d="M13.5,12.5s5,2,5,3c0,2.71-2,5-9,5"></path>
+															<path class="cls-2" d="M9.5,11.5c-2.36,0-4.78-3.68-4.78-6.72S7.14.5,9.5.5"></path>
+															<path class="cls-2" d="M9.5,11.5c2.36,0,4.78-3.68,4.78-6.72S11.86.5,9.5.5"></path>
+														</g>
+													</svg>
+												</div>
+												<div class="room-price__text room-price__text_guests">2 гостя</div>
+											</td>
+										</tr>
+										<tr class="room-price__row room-price__cell_borderTop">
+											<td class="room-price__cell room-price__cell_left room-price__cell_bg room-price__cell_borderRight">
+												<div class="room-price__text">Будние дни</div>
+											</td>
+											<td class="room-price__cell room-price__cell_right room-price__cell_bg">
+												<div class="room-price__text">6 200 руб./сут.</div>
+											</td>
+										</tr>
+										<tr class="room-price__row room-price__cell_borderBottom">
+											<td class="room-price__cell room-price__cell_left room-price__cell_borderRight">
+												<div class="room-price__text">Выходные и праздничные дни</div>
+											</td>
+											<td class="room-price__cell room-price__cell_right">
+												<div class="room-price__text">7 300 руб./сут.</div>
+											</td>
+										</tr>
+										<tr class="room-price__row">
+											<td class="room-price__cell room-price__cell_left room-price__cell_p">
+												<div class="room-price__text room-price__text_grey">
+													<p>Депозитный сбор за номер составляет 1500 руб.</p>
+													<p>(сбор возвращается при выезде из номера, при условии его сдачи).</p>
+												</div>
+											</td>
+											<td class="room-price__cell room-price__cell_right room-price__cell_p"><a class="room-price__button" href="#"><span>Забронировать</span></a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="room-options">
+						<div class="container">
+							<div class="room-options__wrap">
+								<div class="room-options__wrap-in">
+									<div class="room-options__title">В номере имеется:</div>
+									<div class="room-options__list-wrap">
+										<ul class="room-options__list">
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Телефон</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Телевизор</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Холодильник</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Кондиционер</div>
+											</li>
+										</ul>
+										<ul class="room-options__list">
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Чайник и чайные пары</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Совмещенный туалет и ванна</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Махровые халаты, тапочки и фен</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Набор гигиенических принадлежностей</div>
+											</li>
+										</ul>
+									</div>
+									<div class="room-options__title">В стоимость включено</div>
+									<div class="room-options__list-wrap">
+										<ul class="room-options__list">
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Пользование детской комнатой и детскими площадками;</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Посещение контактного зоопарка;</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Пользование спортивными площадками и пляжем без предоставления инвентаря и доп.услуг;</div>
+											</li>
+										</ul>
+										<ul class="room-options__list">
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Проживание (размещение в 16:00, выезд до 14:00);</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Безлимитное купание в комплексе Thermal - в подарок;</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Комплексный завтрак;</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Посещение тренажерного зала;</div>
+											</li>
+											<li class="room-options__item">
+												<div class="room-options__i">
+													<svg viewBox="0 0 9.03 8.55">
+														<polyline class="cls-1" points="1 5.69 2.92 7.55 8.03 1"></polyline>
+													</svg>
+												</div>
+												<div class="room-options__text">Пользование охраняемой автостоянкой;</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="room-reviews">
+						<div class="container">
+							<div class="room-reviews__title">
+								<div class="room-reviews__text">Отзывы</div>
+							</div>
+							<div class="room-reviews__slider">
+								<ul class="room-reviews__slider-w room-reviews__lightgallery">
+									<li class="room-reviews__slide" data-src="https://www.youtube.com/watch?v=meBbDqAXago"><a class="room-reviews__slide-w" href="#"><img class="room-reviews__pic" src="./assets/img/content/hs-reviews-sls1.jpg" alt=""></a></li>
+									<li class="room-reviews__slide" data-src="https://www.youtube.com/watch?v=meBbDqAXago"><a class="room-reviews__slide-w" href="#"><img class="room-reviews__pic" src="./assets/img/content/hs-reviews-sls2.jpg" alt=""></a></li>
+									<li class="room-reviews__slide" data-src="https://www.youtube.com/watch?v=meBbDqAXago"><a class="room-reviews__slide-w" href="#"><img class="room-reviews__pic" src="./assets/img/content/hs-reviews-sls2.jpg" alt=""></a></li>
+									<li class="room-reviews__slide" data-src="https://www.youtube.com/watch?v=meBbDqAXago"><a class="room-reviews__slide-w" href="#"><img class="room-reviews__pic" src="./assets/img/content/hs-reviews-sls2.jpg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<footer class="footer">
+						<div class="container">
+							<ul class="footer__title">
+								<li class="footer__title-item footer__year"><i class="fa fa-copyright" aria-hidden="true"></i>
+									<div class="footer__year-text">2016</div>
+								</li>
+								<li class="footer__title-item footer__title-text">«Баден-Баден Лесная сказка»</li>
+							</ul>
+							<ul class="footer__list">
+								<li class="footer__item"><a class="footer__link" href="#">Все услуги</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Акции</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Новинки</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Мероприятия</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Фото и видео</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Продажа аппартаментов</a></li>
+								<li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+							</ul>
+							<ul class="footer__developer">
+								<li class="footer__developer-item footer__developer-text">Сайт создан:</li>
+								<li class="footer__developer-item footer__developer-logo">
+									<div class="footer__developer-svg">
+										<svg viewBox="0 0 454.76 121.12">
+											<g class="cls-1">
+												<path class="cls-1" d="M327.32,70H298.76v-9h28.56v9ZM47,71.62a17.35,17.35,0,0,1-1.54,7.45,15.18,15.18,0,0,1-4.63,5.67,20.82,20.82,0,0,1-7.33,3.48,37.06,37.06,0,0,1-9.6,1.13q-10,0-15.94-4T.26,73.21L0,72l1.25-.25,7.8-1.55,1.23-.24.27,1.22a13.65,13.65,0,0,0,1.65,4.3,9,9,0,0,0,2.7,2.81,12.54,12.54,0,0,0,3.93,1.67,21.92,21.92,0,0,0,5.27.58,22.76,22.76,0,0,0,5.59-.61,10.73,10.73,0,0,0,3.84-1.74,7.08,7.08,0,0,0,2.21-2.68,8.7,8.7,0,0,0,.74-3.72,8.56,8.56,0,0,0-.29-2.33,5.29,5.29,0,0,0-.82-1.72A8.68,8.68,0,0,0,34,66.22,9.91,9.91,0,0,0,32.19,65,20.89,20.89,0,0,0,30,64a23.66,23.66,0,0,0-2.52-.81l-2.88-.74-.79-.2h0l.79.2-.79-.2h0l-2-.51q-3.43-.88-5.81-1.66a34,34,0,0,1-4.1-1.59A21,21,0,0,1,9.1,56.92h0a14.34,14.34,0,0,1-2.22-1.86A13.51,13.51,0,0,1,5.2,52.94,13.35,13.35,0,0,1,4,50.52a14,14,0,0,1-.72-2.77A19.62,19.62,0,0,1,3,44.63a16.66,16.66,0,0,1,1.4-7,13.79,13.79,0,0,1,4.22-5.26,18.78,18.78,0,0,1,6.68-3.18,34,34,0,0,1,8.79-1,37.06,37.06,0,0,1,8.16.81,18.62,18.62,0,0,1,6.2,2.51,14.74,14.74,0,0,1,4.38,4.59,23.08,23.08,0,0,1,2.71,6.7l.33,1.32-1.34.23-7.91,1.38-1.21.21-.26-1.2A12.29,12.29,0,0,0,33.8,41a7.58,7.58,0,0,0-2.16-2.38,9.58,9.58,0,0,0-3.18-1.41,17.8,17.8,0,0,0-4.39-.49q-5.54,0-8.18,2a6.73,6.73,0,0,0-2.48,5.74,7.61,7.61,0,0,0,.23,2,4.41,4.41,0,0,0,.64,1.41,6.74,6.74,0,0,0,1.11,1.22,8.33,8.33,0,0,0,1.49,1A16.35,16.35,0,0,0,18.8,51a22.82,22.82,0,0,0,2.27.73l2.63.7,2.81.72q2.83.72,5.08,1.38t3.5,1.15q1.32.51,2.53,1.1h0A23.71,23.71,0,0,1,39.89,58a15.93,15.93,0,0,1,2,1.49,15.49,15.49,0,0,1,1.73,1.78A13.89,13.89,0,0,1,45,63.35a15.14,15.14,0,0,1,1.07,2.37,14.94,14.94,0,0,1,.67,2.77A21.23,21.23,0,0,1,47,71.62ZM81.15,38.15V88.48H70.59V38.15H51.91V29H99.83v9.11H81.15Zm142.3,49.74-15-23.67h-8.06V88.48H189.75V29h21.58a34.31,34.31,0,0,1,9,1.06,18.68,18.68,0,0,1,6.77,3.29,14.11,14.11,0,0,1,4.24,5.43,17.69,17.69,0,0,1,1.4,7.22,17.67,17.67,0,0,1-1.07,6.22,15.9,15.9,0,0,1-3.21,5.21,17.46,17.46,0,0,1-5,3.78A20.5,20.5,0,0,1,219,62.89L234.86,86.5l1.33,2H223.83l-.38-.59Zm-1.38-41.72a7,7,0,0,0-2.68-6q-2.86-2.1-8.85-2.1H200.34V55.28h10.52c3.71,0,6.53-.8,8.44-2.39a7.21,7.21,0,0,0,2.06-2.78,10.15,10.15,0,0,0,.7-3.94Zm45.92-8V88.48H257.42V38.15H238.75V29h47.91v9.11H268ZM137.09,91.49s-4.39,1.52-4.39,10.74,8.91,18.89,8.91,18.89,8.91-9.67,8.91-18.89-4.39-10.74-4.39-10.74c4.11,7-4.52,16.69-4.52,16.69S133,98.5,137.09,91.49ZM100.19,100,141.39,0l41.2,100-41.2-17.16L100.19,100Zm41.2-61.38L127.33,72.77l14.06-5.85,14.06,5.85L141.39,38.64ZM425.1,50.19a8.59,8.59,0,1,1-8.59,8.59,8.59,8.59,0,0,1,8.59-8.59Zm0-21.08a29.67,29.67,0,0,0-29.67,29.67c0,.44,0,.88,0,1.31H370.84v9h18.31a20.59,20.59,0,1,1-1-22.25l6.93-5.9a29.66,29.66,0,1,0,3.13,30.37A29.67,29.67,0,1,0,425.1,29.12Zm0,9.07a20.59,20.59,0,1,0,20.59,20.59A20.59,20.59,0,0,0,425.1,38.19Z"></path>
+											</g>
+										</svg>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./js/room-vendor.js"></script>
+	<script src="./js/room-scripts.min.js"></script>
+</html>

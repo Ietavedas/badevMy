@@ -1,0 +1,218 @@
+.aprt-apartments {
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+.aprt-apartments__item {
+    @extend %clearfix;
+
+    .container {
+        max-width: 1200px;
+        @extend %clearfix;
+        padding: 58px 0;
+    }
+}
+
+.aprt-apartments__item_bg {
+    background: #f9f9f9;
+
+    .container {
+        border-top: 1px solid #efefef;
+        border-bottom: 1px solid #efefef;
+    }
+}
+
+.aprt-apartments__name {
+    width: 70%;
+    float: left;
+}
+
+.aprt-apartments__d {
+    max-width: 340px;
+    float: right;
+    font-size: 13px;
+}
+
+.aprt-apartments__name-w {
+    font-size: 0;
+}
+
+.aprt-apartments__link {
+    @include inlineblock();
+    text-decoration: none;
+    width: 38%;
+
+    img {
+        display: block;
+        // max-width: 100%;
+    }
+}
+
+.aprt-apartments__content {
+    @include inlineblock();
+    text-decoration: none;
+    width: 62%;
+
+    * {
+        font-size: 15px;
+    }
+}
+
+.aprt-apartments__description {
+    padding: 0 0 22px 0;
+    border-bottom: 1px solid #dddddd;
+    line-height: 1.8;
+}
+
+.aprt-apartments__title {
+    @include open_sans(extrabold);
+    color: $black;
+    text-decoration: none;
+    font-size: 25px;
+
+    span {
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.aprt-apartments__price {
+    @include open_sans(extrabold);
+    color: $black;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.aprt-apartments__buttons {
+    margin-top: 15px;
+}
+
+.aprt-apartments__button-book {
+    width: 195px;
+    @include inlineblock();
+    text-decoration: none;
+    @include open_sans(semibold);
+    font-size: 16px;
+    padding: 12px 0;
+    color: $white;
+    background-image: linear-gradient( 0deg, rgb(49,159,210) 0%, rgb(98,179,217) 100%);
+    box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.07);
+    text-align: center;
+
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient( 0deg, rgb(11,106,151) 0%, rgb(57,156,202) 100%);
+        opacity: 0;
+        transition: opacity .2s linear;
+    }
+
+    &:hover {
+        opacity: 1;
+
+        &:after {
+            content: '';
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.aprt-apartments__button-read-more {
+    width: 195px;
+    @include inlineblock();
+    text-decoration: none;
+    @include open_sans(semibold);
+    font-size: 16px;
+    padding: 10px 0;
+    color: $black;
+    // background-image: linear-gradient( 0deg, rgb(49,159,210) 0%, rgb(98,179,217) 100%);
+    // box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.07);
+    border: 2px solid #62b3d9;
+    text-align: center;
+    margin: 0 0 0 20px;
+
+    position: relative;
+
+    transition: border-color .2s;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient( 0deg, rgb(11,106,151) 0%, rgb(57,156,202) 100%);
+        opacity: 0;
+        // transition: opacity .2s linear;
+        transition: border-color .5s;
+    }
+
+    &:hover {
+        opacity: 1;
+        transition: border-color .5s;
+
+        border-color: #156d96;
+
+        /*&:after {
+            content: '';
+            display: block;
+            opacity: 1;
+        }*/
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.aprt-apartments__d-wrapper {
+    border: 1px solid #dddddd;
+}
+
+.aprt-apartments__d-content {
+    padding: 20px;
+}
+
+.aprt-apartments__d-discount {
+    background: #76a2b7;
+    color: $white;
+    padding: 21px;
+}
+
+.aprt-apartments__d-cell {
+    width: 50%;
+    vertical-align: top;
+    // padding: 2px 0;
+
+    span {
+        font-family: sans-serif;
+    }
+}
+
+.aprt-apartments__d-cell_t {
+    color: #909090;
+}
+
+.aprt-apartments__item_last {
+
+    .container {
+        border-bottom: 0 none;
+    }
+}

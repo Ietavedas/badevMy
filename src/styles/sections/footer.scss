@@ -1,0 +1,96 @@
+$footerTextColor: #585858;
+$footerFontSize: 14px;
+
+.footer {
+    color: $footerTextColor;
+    font-size: $footerFontSize;
+
+    .container {
+        max-width: 1233px;
+        border-top: 1px solid #e7e7e7;
+        @extend %clearfix;
+        padding: 38px 0;
+    }
+}
+
+.footer__title {
+    float: left;
+    width: 24%;
+
+    @include w1650px {
+        width: 30%;
+        line-height: 1.8;
+    }
+}
+
+.footer__list {
+    float: left;
+    width: 61%;
+
+    @include w1650px {
+        width: 40%;
+        line-height: 1.8;
+    }
+}
+
+.footer__developer {
+    float: left;
+    width: 15%;
+    // text-align: right;
+    text-align: center;
+
+    @include w1650px {
+        width: 30%;
+        line-height: 1.8;
+        // text-align: center;
+    }
+}
+
+.footer__title-item {
+    @include inlineblock();
+    margin-left: 8px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.footer__year-text {
+    @include inlineblock();
+    margin-left: 1px;
+}
+
+.footer__item {
+    @include inlineblock();
+    margin-left: 15px;
+}
+
+.footer__link {
+    display: block;
+    text-decoration: none;
+    color: $footerTextColor;
+    transition: .3s;
+
+    &:hover {
+        transition: .3s;
+        color: #1775ab;
+        font-weight: bold;
+    }
+}
+
+.footer__developer-item {
+    @include inlineblock();
+}
+
+.footer__developer-svg {
+    width: 79px;
+
+    .cls-1 {
+        fill: #707070;
+        fill-rule: evenodd;
+    }
+
+    @include w1650px {
+        margin-top: 4px;
+    }
+}

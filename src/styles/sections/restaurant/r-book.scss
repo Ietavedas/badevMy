@@ -1,0 +1,92 @@
+.r-book {
+
+}
+
+.r-book__form {
+    border: 2px solid $lightblue;
+    padding: 70px 80px;
+    font-size: 0;
+}
+
+.r-book__input-w {
+    width: 25%;
+    @include inlineblock();
+
+    * {
+        font-size: 15px;
+    }
+}
+
+.r-book__title-w {
+    text-align: center;
+}
+
+.r-book__title {
+    @include inlineblock();
+    @include open_sans(extrabold);
+    font-size: 25px;
+    color: $black;
+    text-align: center;
+    background: $white;
+
+    position: relative;
+    top: 17px;
+    padding: 0 20px;
+}
+
+.r-book__input-text {
+    font-size: 15px;
+    color: #4f4f4f;
+}
+
+.r-book__input {
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+    outline: 0 none;
+    // border: 0 none;
+    width: 100%;
+    margin-top: 4px;
+    border: 1px solid #dddddd;
+    height: 45px;
+    padding: 10px;
+
+    color: #4f4f4f;
+}
+
+.r-book__input_name {
+    width: 80%;
+}
+
+.r-book__input_phone {
+    width: 80%;
+}
+
+.r-book__input_date {
+    width: 40%;
+}
+
+.r-book__input_time {
+    width: 40%;
+}
+
+.r-book__submit {
+    text-align: center;
+    position: relative;
+    top: 92px;
+}
+
+.r-book__submit-i {
+    @include inlineblock();
+    @include open_sans(semibold);
+    font-size: 16px;
+    border: 0 none;
+    color: $white;
+    background-image: linear-gradient( 90deg, rgb(49,159,210) 0%, rgb(98,179,217) 100%);
+    outline: 0 none;
+    width: 195px;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.07);
+}
+
+
+

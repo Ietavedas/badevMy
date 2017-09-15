@@ -1,0 +1,45 @@
+section.c-book
+    .container
+        .c-book__title-w
+            .c-book__title
+                | Напишите нам
+
+        .c-book__form-wrap
+
+            form(method="post" action="").c-book__form
+
+                .c-book__row
+
+                    .c-book__input-w
+                        .c-book__input-text
+                            | Имя:
+                        input(type='text' name='name').c-book__input.c-book__input_name
+
+                    .c-book__input-w
+                        .c-book__input-text
+                            | Телефон:
+                        input(type='text' name='phone').c-book__input.c-book__input_phone
+
+                    .c-book__input-w
+                        .c-book__input-text
+                            | Эл. почта:
+                        input(type='text' name='phone').c-book__input.c-book__input_mail
+
+                //- .c-book__input-w
+                    .c-book__input-text
+                        | Дата:
+                    input(type='text' name='date').c-book__input.c-book__input_date
+
+                //- .c-book__input-w
+                    .c-book__input-text
+                        | Время:
+                    input(type='text' name='time').c-book__input.c-book__input_time
+
+                .c-book__row
+                    .c-book__textarea-w
+                        .c-book__textarea-text
+                            | Сообщение:
+                        textarea.c-book__textarea
+
+                .c-book__submit
+                    input(type='submit' value='Забронировать').c-book__submit-i

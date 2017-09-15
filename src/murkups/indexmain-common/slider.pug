@@ -1,0 +1,134 @@
+.slider-wrap
+	.slider
+		.slide
+			.slider-wrap__left
+				.slider-wrap__left-inner
+					img(src="./assets/img/content/logo.png").logo
+					.slogan-wrap
+						span.slogan
+							| Горячий источник в 40 минутах от Челябинска
+			img(src="./assets/img/content/slide.jpg")
+		.slide
+			.slider-wrap__left
+				.slider-wrap__left-inner
+					img(src="./assets/img/content/logo.png").logo
+					.slogan-wrap
+						span.slogan
+							| Номера Thermal
+						span.slogan-desc
+							|Мы предлагаем к проживанию удобные номера с современной отделкой. Всего на территории комплекса имеется 4 корпуса с номерами разной степени комфортности.
+
+			img(src="./assets/img/content/slide2.jpg")
+		.slide
+			.slider-wrap__left
+				.slider-wrap__left-inner
+					img(src="./assets/img/content/logo.png").logo
+					.slogan-wrap
+						span.slogan
+							| Горячий источник в 40 минутах от Челябинска
+			img(src="./assets/img/content/slide.jpg")
+
+	.slider-wrap__inner
+		.slider-wrap__blocks
+
+			.slider-wrap__right
+				.front-search
+					.front-search__left
+						div(data-active="ticket").front-search__form-wrap
+							span.front-search__title-big Поиск билета
+							span.front-search__desc Гарантированное заселение!
+
+							form.front-search__form
+								span.input-wrap__text Дата заезда:
+								.input-wrap.input-wrap--date-icon 
+									input(type="text").input-wrap__input.input-wrap__input.datepicker-here#ticket_arrival
+
+								span.input-wrap__text Дата выезда:
+								.input-wrap.input-wrap--date-icon 
+									input(type="text").input-wrap__input.input-wrap__input
+
+								span.input-wrap__text Кол-во гостей:
+								.input-wrap.input-wrap--count
+									input(type="text").input-wrap__input.input-wrap__input
+
+								span.input-wrap__text Кол-во детей:
+								.input-wrap.input-wrap--child
+									input(type="text").input-wrap__input.input-wrap__input
+
+								input(type="button" value="Найти номер").button.button--big.js-ticket-button
+
+						div(data-active="room").front-search__form-wrap
+							span.front-search__title-big Поиск номера
+							span.front-search__desc Гарантированное заселение!
+
+							form.front-search__form
+								span.input-wrap__text Дата заезда:
+								.input-wrap.input-wrap--date-icon 
+									input(type="text").input-wrap__input.input-wrap__input.datepicker-here
+
+								span.input-wrap__text Дата выезда:
+								.input-wrap.input-wrap--date-icon 
+									input(type="text").input-wrap__input.input-wrap__input
+
+								span.input-wrap__text Кол-во гостей:
+								.input-wrap.input-wrap--count
+									input(type="text").input-wrap__input.input-wrap__input
+
+								span.input-wrap__text Кол-во детей:
+								.input-wrap.input-wrap--child
+									input(type="text").input-wrap__input.input-wrap__input
+
+								input(type="button" value="Найти номер").button.button--big
+
+						div(data-active="tur").front-search__form-wrap
+							span.front-search__title-big Поиск тура
+							span.front-search__desc Гарантированное заселение!
+
+							form.front-search__form
+								span.input-wrap__text Дата заезда:
+								.input-wrap.input-wrap--date-icon 
+									input(type="text").input-wrap__input.input-wrap__input
+
+								span.input-wrap__text Дата выезда:
+								.input-wrap.input-wrap--date-icon 
+									input(type="text").input-wrap__input.input-wrap__input
+
+								span.input-wrap__text Кол-во гостей:
+								.input-wrap.input-wrap--count
+									input(type="text").input-wrap__input.input-wrap__input
+
+								span.input-wrap__text Кол-во детей:
+								.input-wrap.input-wrap--child
+									input(type="text").input-wrap__input.input-wrap__input
+
+								input(type="button" value="Найти номер").button.button--big
+
+					.front-search__right
+						div(data-active="ticket").front-search__block.js-front-search__block
+							.front-search__img
+								img(src="./assets/img/icons/buy-ticket.png")
+								i.front-search__left-icon
+							.front-search__content
+								span.front-search__title Купить билет
+								span.front-search__text В стоимость билета входит большое количество дополнительных услуг
+								a(href="").front-search__link Подробнее
+
+						div(data-active="room").front-search__block.js-front-search__block
+							.front-search__img
+								img(src="./assets/img/icons/search-room.png")
+								i.front-search__left-icon
+							.front-search__content
+								span.front-search__title Найти номер
+								span.front-search__text В стоимость билета входит большое количество дополнительных услуг
+								a(href="").front-search__link Подробнее
+
+						div(data-active="tur").front-search__block.js-front-search__block
+							.front-search__img
+								img(src="./assets/img/icons/tur.png")
+								i.front-search__left-icon
+							.front-search__content
+								span.front-search__title Автобусный тур
+								span.front-search__text В стоимость билета входит большое количество дополнительных услуг
+								a(href="").front-search__link Подробнее
+		.slide-control-wrap
+			.slide-control

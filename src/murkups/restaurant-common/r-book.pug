@@ -1,0 +1,32 @@
+section.r-book
+    .container
+        .r-book__title-w
+            .r-book__title
+                | Забронировать стол
+
+        .r-book__form-wrap
+
+            form(method="post" action="").r-book__form
+
+                .r-book__input-w
+                    .r-book__input-text
+                        | Имя:
+                    input(type='text' name='name').r-book__input.r-book__input_name
+
+                .r-book__input-w
+                    .r-book__input-text
+                        | Телефон:
+                    input(type='text' name='phone').r-book__input.r-book__input_phone
+
+                .r-book__input-w
+                    .r-book__input-text
+                        | Дата:
+                    input(type='text' name='date').r-book__input.r-book__input_date
+
+                .r-book__input-w
+                    .r-book__input-text
+                        | Время:
+                    input(type='text' name='time').r-book__input.r-book__input_time
+
+                .r-book__submit
+                    input(type='submit' value='Забронировать').r-book__submit-i

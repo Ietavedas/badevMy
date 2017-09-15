@@ -1,0 +1,170 @@
+section.search-form
+
+    form(action="" method="post")
+
+        .search__wrapper
+
+            // .search__count.search__mathHeight
+                .search__input-block
+                    .search__count-text
+                        | Кол-во гостей старше 12 лет:
+                    .search__input-block-w
+                        .search__block-input_grownups
+                            input(type="text" name="" value="1").search__input.search__input_grownups
+                            .svg-i__grownups
+                                svg(viewBox="0 0 19 21")
+                                    g
+                                        path(class="cls-1" d="M5.5,12.5s-5,2-5,3c0,2.71,2,5,9,5")
+                                        path(class="cls-1" d="M13.5,12.5s5,2,5,3c0,2.71-2,5-9,5")
+                                        path(class="cls-2" d="M9.5,11.5c-2.36,0-4.78-3.68-4.78-6.72S7.14.5,9.5.5")
+                                        path(class="cls-2" d="M9.5,11.5c2.36,0,4.78-3.68,4.78-6.72S11.86.5,9.5.5")
+                        .search__input-messenger.search__input_grownups-messenger-check
+                            svg(viewBox="0 0 9 9")
+                                g
+                                    polyline(class="check__cls-1" points="1 6 3 8 8 1")
+                        .search__input-messenger.search__input_grownups-messenger-error
+                    .search__grownups-count-messenger-text
+                .search__input-block
+                    .search__count-text
+                        | Кол-во детей до 12 лет:
+                    .search__input-block-w
+                        .search__block-input_children
+                            input(type="text" name="" value="1").search__input.search__input-children
+                            .svg-i__children
+                                svg(viewBox="0 0 21.4 21.4")
+                                    g
+                                        circle(class="cls-1" cx="10.7" cy="10.7" r="10.2")
+                                        line(class="cls-2" x1="12.7" y1="7.59" x2="12.7" y2="10.18")
+                                        line(class="cls-2" x1="8.7" y1="7.59" x2="8.7" y2="10.18")
+                                        path(class="cls-2" d="M6.05,15.28a6.51,6.51,0,0,0,9.29,0")
+                        .search__input-messenger.search__input_children-messenger-check
+                            svg(viewBox="0 0 9 9")
+                                g
+                                    polyline(class="check__cls-1" points="1 6 3 8 8 1")
+                        .search__input-messenger.search__input_children-messenger-error
+                    .search__children-count-messenger-text
+            .search
+
+                .search__title-wrap
+                    .search__title
+                        | Поиск номера
+                    .search__text
+                        | Гарантированное заселение
+
+                .search__date-wrap
+
+                    .search__input-block
+
+                        .search__count-text
+                            | Кол-во гостей
+
+                        .search__input-block-w
+
+                            .search__block-input_grownups
+
+                                input(type="text" name="" value="1").search__input.search__input_grownups
+
+                                .svg-i__grownups
+                                    svg(viewBox="0 0 19 21")
+                                        g
+                                            path(class="cls-1" d="M5.5,12.5s-5,2-5,3c0,2.71,2,5,9,5")
+                                            path(class="cls-1" d="M13.5,12.5s5,2,5,3c0,2.71-2,5-9,5")
+                                            path(class="cls-2" d="M9.5,11.5c-2.36,0-4.78-3.68-4.78-6.72S7.14.5,9.5.5")
+                                            path(class="cls-2" d="M9.5,11.5c2.36,0,4.78-3.68,4.78-6.72S11.86.5,9.5.5")
+
+                            // .search__input-messenger.search__input_grownups-messenger-check
+                                svg(viewBox="0 0 9 9")
+                                    g
+                                        polyline(class="check__cls-1" points="1 6 3 8 8 1")
+                            .search__input-messenger.search__input_grownups-messenger-error
+
+                        .search__grownups-count-messenger-text
+
+                    .search__date-block
+
+                        .search__date-text
+                            | Дата заезда:
+
+                        .search__date
+
+                            input(type="text" name="").search__input-date.search__input-date_in
+
+                            .svg-i__calendar
+                                svg(viewBox="0 0 33.19 20.72")
+                                    g
+                                        rect(class="cls-1" x="13.67" y="2.72" width="19.03" height="17.5" rx="1.59" ry="1.59")
+                                        line(class="cls-1" x1="22.14" y1="11.79" x2="24.22" y2="11.79")
+                                        line(class="cls-1" x1="27.14" y1="11.79" x2="29.22" y2="11.79")
+                                        line(class="cls-1" x1="17.14" y1="11.79" x2="19.22" y2="11.79")
+                                        line(class="cls-1" x1="22.14" y1="15.79" x2="24.22" y2="15.79")
+                                        line(class="cls-1" x1="27.14" y1="15.79" x2="29.22" y2="15.79")
+                                        line(class="cls-1" x1="22.14" y1="7.79" x2="24.22" y2="7.79")
+                                        line(class="cls-1" x1="28.69" y1="0.5" x2="28.69" y2="4.57")
+                                        line(class="cls-1" x1="17.67" y1="0.5" x2="17.67" y2="4.57")
+                                        line(class="cls-1" x1="17.14" y1="7.79" x2="19.22" y2="7.79")
+                                        line(class="cls-1" x1="7.75" y1="11.79" x2="0.5" y2="11.79")
+                                        polyline(class="cls-1" points="4.77 8.81 7.75 11.79 4.77 14.77")
+
+                    .search__dash
+                    .search__date-block
+
+                        .search__date-text
+                            | Дата выезда:
+
+                        .search__date
+
+                            input(type="text" name="").search__input-date.search__input-date_out
+
+                            .svg-i__calendar
+                                svg(viewBox="0 0 33.19 20.72")
+                                    g
+                                        rect(class="cls-1" x="13.67" y="2.72" width="19.03" height="17.5" rx="1.59" ry="1.59")
+                                        line(class="cls-1" x1="22.14" y1="11.79" x2="24.22" y2="11.79")
+                                        line(class="cls-1" x1="27.14" y1="11.79" x2="29.22" y2="11.79")
+                                        line(class="cls-1" x1="17.14" y1="11.79" x2="19.22" y2="11.79")
+                                        line(class="cls-1" x1="22.14" y1="15.79" x2="24.22" y2="15.79")
+                                        line(class="cls-1" x1="27.14" y1="15.79" x2="29.22" y2="15.79")
+                                        line(class="cls-1" x1="22.14" y1="7.79" x2="24.22" y2="7.79")
+                                        line(class="cls-1" x1="28.69" y1="0.5" x2="28.69" y2="4.57")
+                                        line(class="cls-1" x1="17.67" y1="0.5" x2="17.67" y2="4.57")
+                                        line(class="cls-1" x1="17.14" y1="7.79" x2="19.22" y2="7.79")
+                                        line(class="cls-1" x1="7.75" y1="11.79" x2="0.5" y2="11.79")
+                                        polyline(class="cls-1" points="4.77 8.81 7.75 11.79 4.77 14.77")
+
+
+            // .search__promo.search__mathHeight
+                .search__filter-text
+                    | Промокод:
+                .search__filter-input-block
+                    input(type="text" name="" placeholder="Введите код").search__filter-input
+                    .search__filter-check
+                        .svg-i__check
+                            svg(viewBox="0 0 13.03 11.82")
+                                g
+                                    path(class="cls-1" d="M1,7s3.82,3.69,3.82,3.82S12,1,12,1")
+        .search__filter
+
+            ul(class="cd-filters").search__filter-list
+
+                li.search__filter-item
+                    label(for="checkbox1").checkbox-label
+                        input(data-filter=".check1" type="checkbox" id="checkbox1").filter
+                        .filter__input-checkbox
+                        .filter__input-checkbox-text
+                            | 1
+
+                li.search__filter-item
+                    label(for="checkbox2").checkbox-label
+                        input(data-filter=".check2" type="checkbox" id="checkbox2").filter
+                        .filter__input-checkbox
+                        .filter__input-checkbox-text
+                            | 2
+
+                li.search__filter-item
+                    label(for="checkbox3").checkbox-label
+                        input(data-filter=".check3" type="checkbox" id="checkbox3").filter
+                        .filter__input-checkbox
+                        .filter__input-checkbox-text
+                            | 3
+
+        include ../search-common/search-apartments

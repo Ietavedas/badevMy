@@ -1,0 +1,198 @@
+.room-sidebar {
+    width: 383px;
+    float: left;
+    padding: 5vh 40px;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    background: $white;
+
+    @include w1460px {
+        width: 338px;
+        padding: 2vh 40px 5vh 40px;
+    }
+}
+
+.room-sidebar__title {
+    @include open_sans(extrabold);
+    color: $lightgrey;
+    text-align: right;
+}
+
+.room-sb__title-text_t {
+    font-size: 29px;
+    line-height: 33px;
+
+    @include w1460px {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+.room-sb__title-text_b {
+    font-size: 38px;
+    line-height: 42px;
+
+    @include w1460px {
+        font-size: 19px;
+        line-height: 21px;
+    }
+}
+
+.room-sb__list {
+    margin-top: 8vh;
+
+    @include w1460px {
+        margin-top: 10px;
+    }
+}
+
+.room-sb__item {
+    line-height: 1.8;
+}
+
+.room-sb__item {
+    @extend %clearfix;
+}
+
+.room-sb__link {
+    @include open_sans(extrabold);
+    color: $black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .3s;
+    @include inlineblock(middle);
+    width: 85%;
+
+    &:hover {
+        color: $darkblue;
+    }
+
+    @include w1460px {
+        font-size: 18px;
+    }
+
+    &_lh {
+        line-height: 1.2;
+        margin: 10px 0;
+    }
+}
+
+.room-sb__button-wrap {
+    margin-top: 11vh;
+
+    @include w1460px {
+        margin-top: 4vh;
+    }
+}
+
+.room-sb__button {
+    @include open_sans(semibold);
+    color: $black;
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+    border: 1px solid $lightgrey;
+    margin-top: 9px;
+    @extend %clearfix;
+    text-align: center;
+    transition: .3s;
+
+    &:hover {
+        border: 1px solid #0074ad;
+
+        .cls-1 {
+            stroke: #0074ad;
+            transition: .3s;
+        }
+
+        .room-sb__button-text {
+            color: #0074ad;
+        }
+    }
+
+    @include w1460px {
+        padding: 12px;
+        width: 250px;
+    }
+}
+
+.room-sb__button-i {
+    width: 36px;
+    @include inlineblock(middle);
+    transition: .3s;
+
+    .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: .3s;
+    }
+}
+
+.room-sb__button-text {
+    transition: .3s;
+    @include inlineblock(middle);
+    margin-left: 30px;
+}
+
+
+.room-sb__button_phone {
+    display: block;
+    text-decoration: none;
+    color: $black;
+    font-size: 20px;
+    padding: 16px;
+    margin-top: 9px;
+    @extend %clearfix;
+    text-align: center;
+    transition: .3s;
+
+    &:hover {
+
+        .room-sb__button-text_phone {
+            color: #0074ad;
+            transition: .3s;
+        }
+
+        .room-sb__button-i_phone {
+
+            .cls-1 {
+                stroke: #0074ad;
+            }
+        }
+    }
+
+    @include w1460px {
+        display: none;
+    }
+}
+
+.room-sb__button-i_phone {
+    width: 16px;
+    @include inlineblock(middle);
+    margin-left: 10px;
+    transition: .3s;
+
+    .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: .3s;
+    }
+}
+
+.room-sb__button-text_phone {
+    @include inlineblock(middle);
+    transition: .3s;
+}
+
+.room-sb__button_ticket {
+    padding: 10px;
+
+    @include w1460px {
+        padding: 6px;
+    }
+}
